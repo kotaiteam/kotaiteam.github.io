@@ -28,11 +28,6 @@ jobs:
       - name: Build
         env:
           BRIDGETOWN_ENV: production
-        run: bin/bridgetown build
-
-      - name: Deploy
-        env:
-          BRIDGETOWN_ENV: production
         run: bin/bridgetown deploy
 
       - name: Upload build artifact
