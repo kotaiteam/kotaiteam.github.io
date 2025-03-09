@@ -1,11 +1,34 @@
-<header>
-  <img src="{{ '/images/logo.svg' | relative_url }}" alt="Logo" />
-</header>
+<nav class="navbar is-light" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="{{ '/images/logo.png' | relative_url }}" alt="Logo" />
+      </a>
 
-<nav>
-  <ul>
-    <li><a href="{{ '/' | relative_url }}">Home</a></li>
-    <li><a href="{{ '/about' | relative_url }}">About</a></li>
-    <li><a href="{{ '/posts' | relative_url }}">Posts</a></li>
-  </ul>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <a href="{{ '/' | relative_url }}" class="navbar-item">
+          Home
+        </a>
+        <a href="{{ '/about' | relative_url }}" class="navbar-item">
+          About
+        </a>
+        <a href="{{ '/posts' | relative_url }}" class="navbar-item">
+          Posts
+        </a>
+        <div class="buttons">
+          <a class="button has-background-link">
+            <strong>Contact</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>

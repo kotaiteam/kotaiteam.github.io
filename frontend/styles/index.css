@@ -1,3 +1,5 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
 :root {
   --body-background: #f2f2f2;
   --body-color: #444;
@@ -38,7 +40,6 @@ body > header {
 
 body > header img {
   display: inline-block;
-  width: 400px;
   max-width: 100%;
 }
 
@@ -81,4 +82,8 @@ hr {
   border: none;
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
+}
+
+.blue-bg {
+  background-color: #5271FF;
 }
