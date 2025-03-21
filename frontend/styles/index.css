@@ -1,4 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+@import "hero.css";
+@import "fonts.css";
 
 :root {
   --body-background: #f2f2f2;
@@ -82,4 +84,8 @@ hr {
   border: none;
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
+}
+
+.subtitle {
+  color: #ff6600;
 }
