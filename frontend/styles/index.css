@@ -1,4 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+@import "hero.css";
+@import "fonts.css";
 
 :root {
   --body-background: #f2f2f2;
@@ -10,9 +12,7 @@
 body {
   background: var(--body-background);
   color: var(--body-color);
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif;
+  font-family: TildaSans-Regular;
   margin: 0 8px;
   font-size: 108%;
   line-height: 1.5;
@@ -59,9 +59,7 @@ body > nav a {
 }
 
 main {
-  margin: 2rem auto 4rem;
-  max-width: 65rem;
-  min-height: calc(100vh - 200px);
+  width: 100%;
   padding: 25px 25px 50px;
   background: white;
   box-shadow: 2px 3px 3px #ddd;
@@ -82,4 +80,8 @@ hr {
   border: none;
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
+}
+
+.subtitle {
+  color: #ff6600;
 }

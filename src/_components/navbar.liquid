@@ -1,4 +1,4 @@
-<nav class="navbar is-light" role="navigation" aria-label="main navigation">
+<nav class="navbar is-light px-6 py-4" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://bulma.io">
         <img src="{{ '/images/logo.png' | relative_url }}" alt="Logo" />
@@ -13,19 +13,22 @@
     </div>
 
     <div class="navbar-end">
-      <div class="navbar-item">
+      <div class="navbar-item is-size-5">
         <a href="{{ '/' | relative_url }}" class="navbar-item">
-          Home
+          Why choose us?
         </a>
         <a href="{{ '/about' | relative_url }}" class="navbar-item">
-          About
+          About Us
+        </a>
+        <a href="{{ '/about' | relative_url }}" class="navbar-item">
+          Services
         </a>
         <a href="{{ '/posts' | relative_url }}" class="navbar-item">
-          Posts
+          Blog
         </a>
         <div class="buttons">
           <a class="button has-background-link">
-            <strong>Contact</strong>
+            <strong class="is-size-5">Book a call</strong>
           </a>
         </div>
       </div>

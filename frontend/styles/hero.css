@@ -1,0 +1,17 @@
+.bg-img {
+  background-image: url(../../src/images/hero-bg.jpg);
+  transform: translateZ(0);
+  will-change: transform;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+  filter: brightness(55%);
+}
+
+.hero-button-postition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
