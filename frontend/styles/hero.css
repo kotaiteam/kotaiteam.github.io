@@ -7,8 +7,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-color: #999;
-  -webkit-mask-image: linear-gradient(black, transparent);
-  mask-image: linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
+  filter: brightness(55%);
 }
 
 .hero-button-postition {

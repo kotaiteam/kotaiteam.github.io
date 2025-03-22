@@ -1,4 +1,34 @@
 @font-face {
-    font-family: TildaSans;
+    font-family: TildaSans-Black;
     src: url("../fonts/TildaSans-Black.ttf");
+}
+
+@font-face {
+    font-family: TildaSans-Bold;
+    src: url("../fonts/TildaSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: TildaSans-ExtraBold;
+    src: url("../fonts/TildaSans-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: TildaSans-Light;
+    src: url("../fonts/TildaSans-Light.ttf");
+}
+
+@font-face {
+    font-family: TildaSans-Medium;
+    src: url("../fonts/TildaSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: TildaSans-Regular;
+    src: url("../fonts/TildaSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: TildaSans-Semibold;
+    src: url("../fonts/TildaSans-Semibold.ttf");
 }
