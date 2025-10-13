@@ -1,0 +1,26 @@
+heading: OUR SERVICES
+services:
+  - title: AI Chat & Agents Integration
+    description: >-
+      Empower your business with intelligent solutions. Our AI integration services unlock smarter automation, improved decision-making, and enhanced customer experiences. Stay ahead with future-ready technology.
+    image: magic_wand_3d.png
+  - title: UX / UI Development & Product Design
+    description: >-
+      Design that drives engagement and intuitive experiences. We create intuitive interfaces and captivating designs that put user experience at the heart of your product. Delight your users with every interaction.
+    image: diamond_with_a_dot_3d.png
+  - title: Web & Mobile Development
+    description: >-
+      Craft seamless digital experiences with custom-built web and mobile solutions. We deliver fast, responsive, and scalable applications tailored to your business goals. Reach your audience wherever they are.
+    image: mobile_phone_3d.png
+  - title: Modernization & Digital Transformation
+    description: >-
+      Unlock new possibilities by transforming legacy systems and embracing modern technologies & architectures. Future-proof your business with scalable, efficient solutions.
+    image: rocket_3d.png
+  - title: Testing & Quality Assurance
+    description: >-
+      Deliver flawless solutions with our rigorous testing and QA services. We ensure performance, security, and reliability so your software exceeds expectations.
+    image: triangular_ruler_3d.png
+  - title: Servicing / Support & Maintenance
+    description: >-
+      Ensure your systems run smoothly with proactive maintenance and dedicated support. We keep your technology secure, updated, and optimized for peak performance.
+    image: gear_3d.png            

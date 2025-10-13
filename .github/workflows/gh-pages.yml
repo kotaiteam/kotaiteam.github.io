@@ -14,12 +14,12 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3.4'
+          ruby-version: "3.3.4"
           bundler-cache: true
       - run: bundle install
 
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: "22.12.0"
           cache: "yarn"

@@ -7,11 +7,11 @@
   background-attachment: fixed;
   background-size: cover;
   background-color: #999;
-  filter: brightness(55%);
+  filter: brightness(75%);
 }
 
-.hero-button-postition {
+/* .hero-button-position {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */

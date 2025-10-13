@@ -5,9 +5,10 @@
   </head>
   <body class="{{ data.layout }} {{ data.page_class }}">
     {% render "navbar", metadata: site.metadata, resource: resource %}
-    {% render "hero" %}
+    {% render "hero", metadata: site.metadata, resource: resource %}
     <main>
-      {% render "section" %}
+      {% render "why_choose_us", metadata: site.metadata, resource: resource %}
+      {% render "services", metadata: site.metadata, services: site.data.services, resource: resource %}
       {{ content }}
     </main>
 

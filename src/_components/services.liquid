@@ -1,0 +1,27 @@
+<section id="services" class="section">
+  <h1 class="title">{{services.heading}}</h1>
+  <div class="fixed-grid has-3-cols has-1-cols-mobile has-3-cols-tablet has-3-cols-desktop">
+    <div class="grid is-3">
+      {% for svc_item in services.services %}
+        <div class="cell">
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <figure class="image is-48x48">
+                  <img src="/images/{{svc_item.image}}" />
+                </figure>
+              </div> 
+              <div class="media-content">
+                <p class="title is-4">{{svc_item.title}}</p>
+                <p class="subtitle is-6">{{svc_item.description}}</p>
+              </div>             
+            </div>
+          </div>
+        </div>
+      {% endfor %}                      
+    </div>
+  </div>
+  <div class="buttons are-medium">
+    <a class="button is-primary has-background-link has-text-white" target="_blank" href="{{metadata.bookings_link}}">Book an introductory consultation call</a>
+  </div>
+</section>
