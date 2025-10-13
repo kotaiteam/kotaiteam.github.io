@@ -85,3 +85,50 @@ hr {
 .subtitle {
   color: #ff6600;
 }
+
+footer {
+  background-color: #e0e0e0;
+  padding: 2rem 0.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 1em;
+  color: #000;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+footer .cell {
+  align-content: center;
+}
+
+.footer-logo {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #4a4a4a;
+  vertical-align: middle;
+}
+
+.footer-logo img {
+  width: 30%;
+  height: auto;
+  /* float: left; */
+}
+
+.footer-logo p {
+  font-size: small;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.social-icons a {
+  color: #4a4a4a;
+  font-size: 1rem;
+  text-decoration: underline;
+}

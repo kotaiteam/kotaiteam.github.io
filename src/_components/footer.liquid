@@ -1,3 +1,26 @@
 <footer>
-  Contact me at <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
+   <div class="fixed-grid has-3-cols has-1-cols-mobile has-3-cols-tablet has-3-cols-desktop has-3-cols-widescreen">
+    <div class="grid is-3">
+      <div class="cell">
+        <div class="footer-logo">
+          <img src="{{ '/images/' | append: metadata.logo | relative_url }}" alt="Kotai Logo" />
+          <p>a software development & </br> technology services company</p>
+        </div>  
+      </div>
+      <div class="cell">
+        <p>&copy; 2025 All rights reserved.</p>
+        <p>Made with ❤️ in Sydney & Atlanta</p>
+      </div>
+      <div class="cell">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/kotai/" target="_blank" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+            <a href="https://www.x.com/kotai" target="_blank" aria-label="X"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/kotai/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <div>
+          <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>

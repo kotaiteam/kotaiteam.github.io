@@ -1,10 +1,10 @@
 <nav class="navbar is-light px-6 py-4" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="{{ '/images/logo.png' | relative_url }}" alt="Logo" />
+      <a class="navbar-item" href="/">
+        <img src="{{ '/images/' | append: metadata.logo | relative_url }}" alt="Kotai Logo" />
       </a>
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavBar">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -14,17 +14,17 @@
 
     <div class="navbar-end">
       <div class="navbar-item is-size-5">
-        <a href="{{ '/' | relative_url }}" class="navbar-item">
+        <a href="{{ '/why-choose-us' | relative_url }}" class="navbar-item">
           Why choose us?
         </a>
-        <a href="{{ '/about' | relative_url }}" class="navbar-item">
-          About Us
-        </a>
-        <a href="{{ '/about' | relative_url }}" class="navbar-item">
+        <a href="{{ '/services' | relative_url }}" class="navbar-item">
           Services
         </a>
         <a href="{{ '/posts' | relative_url }}" class="navbar-item">
           Blog
+        </a>
+        <a href="{{ '/about' | relative_url }}" class="navbar-item">
+          About Us
         </a>
         <div class="buttons">
           <a class="button has-background-link">
