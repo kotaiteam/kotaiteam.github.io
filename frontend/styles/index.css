@@ -6,7 +6,7 @@
   --body-background: #f2f2f2;
   --body-color: #444;
   --heading-color: black;
-  --action-color: #d64045;
+  --action-color: #ff6600;
 }
 
 body {
@@ -185,4 +185,14 @@ footer .cell {
   font-size: 1rem;
   font-weight: 200;
   text-align: center;
+}
+
+#why-choose-us {
+  color: var(--heading-color);
+  background-color: var(--action-color);
+}
+
+#why-choose-us .subtitle {
+  color: var(--heading-color);
+  font-size: 1.5rem;
 }

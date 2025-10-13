@@ -7,6 +7,7 @@
     {% render "navbar", metadata: site.metadata, resource: resource %}
     {% render "hero", metadata: site.metadata, resource: resource %}
     <main>
+      {% render "why_choose_us", metadata: site.metadata, resource: resource %}
       {% render "services", metadata: site.metadata, services: site.data.services, resource: resource %}
       {{ content }}
     </main>
