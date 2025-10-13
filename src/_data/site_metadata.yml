@@ -11,6 +11,8 @@ email: info@kotai.team
 logo: logo.png
 description: >-
   We are a team of designers, developers, and strategists who are passionate about creating digital products that help businesses grow.
+google_analytics:
+bookings_link: /book-a-call
 
 development:
   title: Kotai (DEV)
