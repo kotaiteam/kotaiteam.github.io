@@ -1,16 +1,43 @@
-.bg-img {
-  background-image: url(../../src/images/hero-bg.jpg);
-  transform: translateZ(0);
-  will-change: transform;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #999;
+/* Hero-specific overrides only */
+
+/* Digital hero button colors */
+.hero-digital .button.is-dark {
+  background-color: #1a1f2e;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
-/* .hero-button-position {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+.hero-digital .button.is-dark:hover {
+  background-color: #252b40;
+}
+
+.hero-digital .button.is-light {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.hero-digital .button.is-light:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Fractional hero button colors */
+.hero-fractional .button.is-dark {
+  background-color: #1a1a1a;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.hero-fractional .button.is-dark:hover {
+  background-color: #2a2a2a;
+}
+
+.hero-fractional .button.is-light {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.hero-fractional .button.is-light:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}

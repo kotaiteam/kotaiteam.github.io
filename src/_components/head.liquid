@@ -5,8 +5,17 @@
 
 <meta name="description" content="{{ metadata.description }}" />
 
+<!-- Google Fonts: Sora (headings) + DM Sans (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Simple Icons Font (tech/partner logos) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v14/font/simple-icons.min.css">
+
+<!-- Lucide Icons (CDN fallback) -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
 <link rel="stylesheet" href="{% asset_path css %}" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-<script src="https://kit.fontawesome.com/1008d6c090.js" crossorigin="anonymous"></script>
 <script src="{% asset_path js %}" defer></script>
 {% live_reload_dev_js %}

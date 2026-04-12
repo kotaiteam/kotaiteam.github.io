@@ -3,13 +3,14 @@
   <head>
     {% render "head", metadata: site.metadata, title: data.title %}
   </head>
-  <body class="{{ data.layout }} {{ data.page_class }}">
-    {% render "navbar", metadata: site.metadata, resource: resource %}
-
-    <main>
+  <body data-page="{{ data.page_id }}">
+    {% render "scroll_progress" %}
+    {% render "navbar", metadata: site.metadata, resource: resource, page_id: data.page_id %}
+    {% render "mobile_bottom_bar" %}
+    <main class="main-content">
       {{ content }}
     </main>
-
-    {% render "footer", metadata: site.metadata %}
+    {% render "back_to_top" %}
+    {% render "footer", metadata: site.metadata, page_id: data.page_id %}
   </body>
 </html>

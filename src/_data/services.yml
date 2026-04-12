@@ -1,26 +1,89 @@
-heading: OUR SERVICES
-services:
-  - title: AI Chat & Agents Integration
-    description: >-
-      Empower your business with intelligent solutions. Our AI integration services unlock smarter automation, improved decision-making, and enhanced customer experiences. Stay ahead with future-ready technology.
-    image: magic_wand_3d.png
-  - title: UX / UI Development & Product Design
-    description: >-
-      Design that drives engagement and intuitive experiences. We create intuitive interfaces and captivating designs that put user experience at the heart of your product. Delight your users with every interaction.
-    image: diamond_with_a_dot_3d.png
-  - title: Web & Mobile Development
-    description: >-
-      Craft seamless digital experiences with custom-built web and mobile solutions. We deliver fast, responsive, and scalable applications tailored to your business goals. Reach your audience wherever they are.
-    image: mobile_phone_3d.png
-  - title: Modernization & Digital Transformation
-    description: >-
-      Unlock new possibilities by transforming legacy systems and embracing modern technologies & architectures. Future-proof your business with scalable, efficient solutions.
-    image: rocket_3d.png
-  - title: Testing & Quality Assurance
-    description: >-
-      Deliver flawless solutions with our rigorous testing and QA services. We ensure performance, security, and reliability so your software exceeds expectations.
-    image: triangular_ruler_3d.png
-  - title: Servicing / Support & Maintenance
-    description: >-
-      Ensure your systems run smoothly with proactive maintenance and dedicated support. We keep your technology secure, updated, and optimized for peak performance.
-    image: gear_3d.png            
+digital:
+  title: Digital Services
+  subtitle: Comprehensive technology solutions designed to accelerate your digital transformation journey.
+  cta_title: "Let's Build Together"
+  cta_text: Discover how our technology solutions can transform your business.
+  services:
+    - title: Digital Transformation
+      icon: code-2
+      points:
+        - Legacy system modernization
+        - ERP/CRM integrations
+        - Process digitization
+        - Enterprise data strategy
+        - System architecture redesign
+    - title: AI Adoption & Automation
+      icon: brain
+      points:
+        - AI workflow automation
+        - Robotic Process Automation (RPA)
+        - AI-powered dashboards
+        - Predictive analytics
+        - Internal AI copilots
+    - title: Cloud Transformation
+      icon: cloud
+      points:
+        - AWS / Azure / GCP migration
+        - Infrastructure as Code
+        - DevOps pipelines
+        - Cloud cost optimization
+        - Multi-cloud architecture
+    - title: Web & Mobile Development
+      icon: smartphone
+      points:
+        - Custom web applications
+        - SaaS platforms
+        - Mobile apps (iOS / Android)
+        - API architecture
+        - UI/UX engineering
+
+fractional:
+  title: Fractional Leadership
+  subtitle: Executive expertise on-demand, tailored to your specific business needs.
+  cta_title: Ready to Bring On Executive Talent?
+  cta_text: Connect with our fractional executives to discuss your leadership needs.
+  roles:
+    - title: Fractional CTO
+      icon: code-2
+      responsibilities:
+        - Technology strategy & roadmap
+        - Architecture decisions
+        - Vendor oversight
+        - Engineering team leadership
+        - Technical due diligence
+      ideal_for: Startups and growth-stage companies needing technical leadership
+      engagement: 3-6 months minimum
+      kpis: Tech stack optimization, team velocity, infrastructure cost reduction
+    - title: Fractional CMO
+      icon: trending-up
+      responsibilities:
+        - Growth strategy development
+        - Digital marketing architecture
+        - Demand generation systems
+        - Brand positioning
+        - Marketing team structure
+      ideal_for: Companies seeking to scale marketing operations
+      engagement: 4-12 months
+      kpis: Lead generation growth, CAC reduction, brand awareness metrics
+    - title: Fractional COO
+      icon: cog
+      responsibilities:
+        - Operational efficiency
+        - Process structuring
+        - Execution discipline
+        - Cross-functional alignment
+        - Scalability planning
+      ideal_for: Scaling companies experiencing operational challenges
+      engagement: 6-12 months
+      kpis: Process efficiency, cost per unit, operational margin improvement
+    - title: Fractional CPO
+      icon: package
+      responsibilities:
+        - Product vision & strategy
+        - Roadmap definition
+        - Customer-centric growth
+        - Product-market fit optimization
+        - Feature prioritization
+      ideal_for: Product-led companies refining their offering
+      engagement: 3-9 months
+      kpis: User engagement, retention rates, feature adoption

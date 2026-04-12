@@ -1,10 +1,10 @@
-<nav class="navbar is-light px-6 py-4" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top" id="siteHeader" role="navigation" aria-label="main navigation">
+  <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img src="{{ '/images/' | append: metadata.logo | relative_url }}" alt="Kotai Logo" />
+      <a class="navbar-item" href="{{ '/' | relative_url }}" id="logoLink">
+        <img src="{{ '/images/' | append: metadata.logo | relative_url }}" alt="KOTAI" style="max-height:36px;">
       </a>
-
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavBar">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavMenu">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -12,23 +12,32 @@
       </a>
     </div>
 
-    <div class="navbar-end">
-      <div class="navbar-item is-size-5">
-        <a href="{{ '#why-choose-us' | relative_url }}" class="navbar-item">
-          Why choose us?
+    <div id="mainNavMenu" class="navbar-menu">
+      <!-- Toggle pill (desktop center) -->
+      <div class="navbar-start is-flex is-align-items-center">
+        <div class="navbar-item">
+          <div class="toggle-container">
+            <button id="toggleDigital" class="toggle-btn active" data-mode="digital">Kotai Digital</button>
+            <button id="toggleFractional" class="toggle-btn" data-mode="fractional">Kotai Fractional</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav links -->
+      <div class="navbar-end">
+        {% assign current = page_id %}
+        <a href="{{ '/' | relative_url }}" class="navbar-item nav-link{% if current == 'home' %} active{% endif %}">
+          Home <span class="nav-underline"></span>
         </a>
-        <a href="{{ '#services' | relative_url }}" class="navbar-item">
-          Services
+        <a href="{{ '/services/' | relative_url }}" class="navbar-item nav-link{% if current == 'services' %} active{% endif %}">
+          Services <span class="nav-underline"></span>
         </a>
-        <a href="{{ '/posts' | relative_url }}" class="navbar-item">
-          Blog
+        <a href="{{ '/about/' | relative_url }}" class="navbar-item nav-link{% if current == 'about' %} active{% endif %}">
+          About Us <span class="nav-underline"></span>
         </a>
-        <a href="{{ '/about' | relative_url }}" class="navbar-item">
-          About Us
-        </a>
-        <div class="buttons">
-          <a class="button has-background-link" target="_blank" href="{{metadata.bookings_link}}">
-            <strong class="is-size-5">Book a call</strong>
+        <div class="navbar-item">
+          <a href="{{ '/contact/' | relative_url }}" class="button is-dark{% if current == 'contact' %} is-active{% endif %}">
+            Contact Us
           </a>
         </div>
       </div>

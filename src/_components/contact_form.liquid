@@ -1,0 +1,156 @@
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <!-- Contact Info -->
+      <div class="column is-one-third contact-info">
+        <h2 class="title is-3">Get in Touch</h2>
+        <p class="subtitle is-6 mb-5">We're excited to learn about your business and explore how we can partner together.</p>
+
+        <div class="mb-5">
+          <div class="is-flex is-align-items-center mb-4" style="gap:0.75rem;">
+            <span class="contact-icon">
+              <i data-lucide="mail" style="width:18px;height:18px;"></i>
+            </span>
+            <div>
+              <p class="title is-6 mb-0">Email</p>
+              <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
+            </div>
+          </div>
+
+          <div class="is-flex is-align-items-center mb-4" style="gap:0.75rem;">
+            <span class="contact-icon">
+              <i data-lucide="phone" style="width:18px;height:18px;"></i>
+            </span>
+            <div>
+              <p class="title is-6 mb-0">Phone</p>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+
+          <div class="is-flex is-align-items-center mb-4" style="gap:0.75rem;">
+            <span class="contact-icon">
+              <i data-lucide="map-pin" style="width:18px;height:18px;"></i>
+            </span>
+            <div>
+              <p class="title is-6 mb-0">Office</p>
+              <p>123 Innovation Drive, San Francisco, CA 94105</p>
+            </div>
+          </div>
+
+          <div class="is-flex is-align-items-center mb-4" style="gap:0.75rem;">
+            <span class="contact-icon">
+              <i data-lucide="linkedin" style="width:18px;height:18px;"></i>
+            </span>
+            <div>
+              <p class="title is-6 mb-0">LinkedIn</p>
+              <a href="{{ metadata.linkedin_url }}" target="_blank" rel="noopener noreferrer">linkedin.com/company/kotai</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="is-flex is-align-items-center mb-3" style="gap:0.5rem;">
+            <i data-lucide="calendar" style="width:18px;height:18px;color:var(--kotai-slate);"></i>
+            <p class="title is-6 mb-0">Book a Meeting</p>
+          </div>
+          <p class="mb-3" style="font-size:0.9rem;color:#666;">Schedule a 30-minute consultation with our team.</p>
+          <a href="#" class="button is-dark is-fullwidth">View Calendar</a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="column contact-form-wrapper">
+        <div class="box" style="padding:2rem;">
+          <form id="contactForm">
+            <div class="columns">
+              <div class="column">
+                <div class="field">
+                  <label class="label">Name *</label>
+                  <div class="control">
+                    <input class="input" type="text" name="name" required placeholder="John Doe">
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="field">
+                  <label class="label">Company *</label>
+                  <div class="control">
+                    <input class="input" type="text" name="company" required placeholder="Company Name">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Role *</label>
+              <div class="control">
+                <input class="input" type="text" name="role" required placeholder="CEO, CTO, etc.">
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="column">
+                <div class="field">
+                  <label class="label">Email *</label>
+                  <div class="control">
+                    <input class="input" type="email" name="email" required placeholder="john@company.com">
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="field">
+                  <label class="label">Phone</label>
+                  <div class="control">
+                    <input class="input" type="tel" name="phone" placeholder="+1 (555) 123-4567">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Service Interested In *</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="digital">Kotai Digital</option>
+                    <option value="fractional">Kotai Fractional</option>
+                    <option value="both">Both</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Project Budget Range</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select name="budget">
+                    <option value="">Select budget range</option>
+                    <option value="50k-100k">$50K - $100K</option>
+                    <option value="100k-250k">$100K - $250K</option>
+                    <option value="250k-500k">$250K - $500K</option>
+                    <option value="500k+">$500K+</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Message *</label>
+              <div class="control">
+                <textarea class="textarea" name="message" required rows="5" placeholder="Tell us about your project or needs..."></textarea>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <button type="submit" class="button is-dark is-fullwidth">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,20 +1,15 @@
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.metadata.myvariable }}.
-
-title: Kotai
-tagline: Design. Build. Ship.
+title: KOTAI
+tagline: Building Systems. Building Leaders. Building the Future.
 url: https://kotai.team
-email: info@kotai.team
-logo: logo.png
+email: hello@kotai.team
+logo: icons/Compressed_Logo.svg
 description: >-
-  We are a team of designers, developers, and strategists who are passionate about creating digital products that help businesses grow.
-google_analytics:
-bookings_link: /book-a-call
+  KOTAI is a dual-engine growth partner combining digital engineering excellence
+  with strategic executive leadership.
+bookings_link: /contact
+linkedin_url: https://linkedin.com/company/kotai
 
 development:
-  title: Kotai (DEV)
+  title: KOTAI (DEV)
   unpublished: true
   future: true

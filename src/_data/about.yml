@@ -1,0 +1,31 @@
+vision: To become the most trusted transformation partner for modern enterprises.
+mission: Deliver measurable business outcomes through intelligent systems and strategic leadership.
+values:
+  - title: Integrity
+    icon: award
+    description: We build trust through transparency, honesty, and ethical practice.
+  - title: Innovation
+    icon: lightbulb
+    description: We embrace cutting-edge technology to solve complex business challenges.
+  - title: Accountability
+    icon: check-circle
+    description: We take ownership of outcomes and deliver on our commitments.
+  - title: Strategic Thinking
+    icon: target
+    description: We align technology and leadership decisions with long-term business goals.
+  - title: Long-Term Partnership
+    icon: handshake
+    description: We invest in lasting relationships that grow alongside your business.
+team:
+  - name: Sarah Chen
+    title: Co-Founder & CEO
+    image: https://images.unsplash.com/photo-1758518727888-ffa196002e59?w=400&q=80
+  - name: Michael Torres
+    title: Chief Technology Officer
+    image: https://images.unsplash.com/photo-1543132220-7bc04a0e790a?w=400&q=80
+  - name: Jessica Park
+    title: Chief Operating Officer
+    image: https://images.unsplash.com/photo-1762341116897-921e2a52f7ff?w=400&q=80
+  - name: David Richardson
+    title: Head of Digital Strategy
+    image: https://images.unsplash.com/photo-1769636929261-e913ed023c83?w=400&q=80

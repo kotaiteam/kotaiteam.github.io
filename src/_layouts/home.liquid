@@ -1,17 +1,12 @@
-<!doctype html>
-<html lang="{{ site.locale }}">
-  <head>
-    {% render "head", metadata: site.metadata, title: data.title %}
-  </head>
-  <body class="{{ data.layout }} {{ data.page_class }}">
-    {% render "navbar", metadata: site.metadata, resource: resource %}
-    {% render "hero", metadata: site.metadata, resource: resource %}
-    <main>
-      {% render "why_choose_us", metadata: site.metadata, resource: resource %}
-      {% render "services", metadata: site.metadata, services: site.data.services, resource: resource %}
-      {{ content }}
-    </main>
-
-    {% render "footer", metadata: site.metadata %}
-  </body>
-</html>
+---
+layout: default
+page_id: home
+---
+{% render "hero", metadata: site.metadata %}
+{% render "stats_bar" %}
+{% render "partners" %}
+{% render "featured_work", featured_work: site.data.featured_work %}
+{% render "split_section", badge: "Infrastructure Excellence", heading: "Cloud-Native Architecture", body: "We design and implement cloud infrastructure that scales with your business needs.", checklist: "Multi-cloud architecture design,Kubernetes orchestration and management,Infrastructure as Code with Terraform", image_url: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80", image_alt: "Team collaboration on cloud systems", dot_color: "slate" %}
+{% render "split_section", badge: "Artificial Intelligence", heading: "AI & Automation at Scale", body: "We build and deploy machine learning systems that deliver measurable business outcomes.", checklist: "Custom ML model development and training,Real-time data pipelines and streaming,Production-grade Kubernetes deployment", image_url: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&q=80", image_alt: "AI and automation dashboard", dot_color: "peach", reverse: "true" %}
+{% render "cta_section", title: "Ready to Build Something Great?", body: "Let's discuss how we can transform your business with technology and leadership.", button_text: "Start Your Project →", button_href: "/contact/" %}
+{{ content }}

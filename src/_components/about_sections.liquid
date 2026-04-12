@@ -1,0 +1,106 @@
+<!-- Who We Are -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-half">
+        <h2 class="title is-3">Who We Are</h2>
+        <p class="mb-4">Kotai is a dual-engine growth partner combining digital engineering excellence with strategic executive leadership.</p>
+        <p class="mb-4"><strong>We operate across two verticals:</strong></p>
+        <div class="columns">
+          <div class="column">
+            <div class="box peach-border">
+              <h3 class="title is-5">Kotai Digital</h3>
+              <p style="font-size:0.9rem;color:#555;">Technology transformation services — cloud, AI, and full-stack development that modernizes enterprises.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box slate-border">
+              <h3 class="title is-5">Kotai Fractional</h3>
+              <p style="font-size:0.9rem;color:#555;">On-demand executive leadership — Fractional CTOs, CMOs, COOs, and CPOs embedded in your business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half">
+        <figure class="image">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" alt="Technology infrastructure" style="border-radius:8px;width:100%;object-fit:cover;max-height:400px;">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="section has-background-light">
+  <div class="container">
+    <div class="columns">
+      <div class="column vm-card">
+        <div class="box has-text-centered" style="height:100%;">
+          <div class="peach-bg mb-4 mx-auto" style="border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;">
+            <i data-lucide="eye" style="width:24px;height:24px;color:var(--kotai-charcoal);"></i>
+          </div>
+          <h2 class="title is-4">Vision</h2>
+          <p>{{ about.vision }}</p>
+        </div>
+      </div>
+      <div class="column vm-card">
+        <div class="box has-text-centered" style="height:100%;">
+          <div class="slate-bg mb-4 mx-auto" style="border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;">
+            <i data-lucide="target" style="width:24px;height:24px;color:var(--kotai-white);"></i>
+          </div>
+          <h2 class="title is-4">Mission</h2>
+          <p>{{ about.mission }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values -->
+<section class="section">
+  <div class="container">
+    <div class="block has-text-centered mb-6 section-header">
+      <h2 class="title is-3">Our Values</h2>
+    </div>
+    <div class="columns is-multiline is-centered">
+      {% for value in about.values %}
+        <div class="column is-half-tablet is-one-fifth-desktop value-card">
+          <div class="box has-text-centered" style="height:100%;">
+            <div class="card-icon-wrapper peach-bg mb-3 mx-auto">
+              <i data-lucide="{{ value.icon }}" style="width:24px;height:24px;"></i>
+            </div>
+            <p class="title is-5">{{ value.title }}</p>
+            <p class="subtitle is-6">{{ value.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Leadership Team -->
+<section class="section has-background-light">
+  <div class="container">
+    <div class="block has-text-centered mb-6 section-header">
+      <h2 class="title is-3">Leadership Team</h2>
+      <p class="subtitle is-5">Experienced executives driving transformation across industries.</p>
+    </div>
+    <div class="columns is-multiline is-centered">
+      {% for member in about.team %}
+        <div class="column is-half-tablet is-one-quarter-desktop team-card">
+          <div class="card" style="height:100%;">
+            <div class="card-image">
+              <figure class="image is-square">
+                <img src="{{ member.image }}" alt="{{ member.name }}" style="object-fit:cover;object-position:top;">
+              </figure>
+            </div>
+            <div class="card-content has-text-centered">
+              <p class="title is-5">{{ member.name }}</p>
+              <p class="subtitle is-6">{{ member.title }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
