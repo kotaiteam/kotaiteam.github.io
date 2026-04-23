@@ -21,6 +21,12 @@ url: "https://kotai.team" # the base hostname & protocol for your site, e.g. htt
 
 permalink: pretty
 template_engine: liquid
+exclude:
+  - node_modules
+  - scripts
+  - features
+  - README.md
+  - .claude
 
 # Other options you might want to investigate:
 #
