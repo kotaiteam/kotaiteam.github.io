@@ -1,0 +1,84 @@
+<!-- Who We Are -->
+<section class="about-who-section">
+  <div class="container">
+    <div class="split-grid">
+      <div class="split-content">
+        <h2>Who We Are</h2>
+        <p>Kotai is a dual-engine growth partner combining digital engineering excellence with strategic executive leadership.</p>
+        <p>We operate across two verticals:</p>
+        <div class="about-verticals">
+          <div class="vertical-card peach-border">
+            <h3>Kotai Digital</h3>
+            <p>Technology transformation services that modernize systems and accelerate innovation.</p>
+          </div>
+          <div class="vertical-card slate-border">
+            <h3>Kotai Fractional</h3>
+            <p>On-demand executive leadership that brings strategic clarity and execution discipline.</p>
+          </div>
+        </div>
+      </div>
+      <div class="split-image">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80" alt="Technology infrastructure">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="vision-mission-section">
+  <div class="container">
+    <div class="vm-grid">
+      <div class="vm-card">
+        <div class="vm-icon"><i data-lucide="eye"></i></div>
+        <h2>Vision</h2>
+        <p>{{ about.vision }}</p>
+      </div>
+      <div class="vm-card">
+        <div class="vm-icon"><i data-lucide="target"></i></div>
+        <h2>Mission</h2>
+        <p>{{ about.mission }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values -->
+<section class="values-section">
+  <div class="container">
+    <div class="section-header center">
+      <h2>Our Values</h2>
+    </div>
+    <div class="values-grid">
+      {% for value in about.values %}
+        <div class="value-card">
+          <div class="value-icon"><i data-lucide="{{ value.icon }}"></i></div>
+          <h3>{{ value.title }}</h3>
+          <p>{{ value.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Leadership Team -->
+<section class="team-section">
+  <div class="container">
+    <div class="section-header center">
+      <h2>Leadership Team</h2>
+      <p>Experienced executives driving transformation across industries.</p>
+    </div>
+    <div class="team-grid">
+      {% for member in about.team %}
+        <div class="team-card">
+          <div class="team-image">
+            <img src="{{ member.image }}" alt="{{ member.name }}">
+          </div>
+          <div class="team-info">
+            <h3>{{ member.name }}</h3>
+            <p>{{ member.title }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

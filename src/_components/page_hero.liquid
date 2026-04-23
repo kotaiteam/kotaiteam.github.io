@@ -1,0 +1,8 @@
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <h1{% if heading_id %} id="{{ heading_id }}"{% endif %}>{{ heading }}</h1>
+      {% if subheading %}<p{% if subheading_id %} id="{{ subheading_id }}"{% endif %}>{{ subheading }}</p>{% endif %}
+    </div>
+  </div>
+</section>

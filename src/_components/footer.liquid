@@ -1,26 +1,70 @@
-<footer>
-   <div class="fixed-grid has-3-cols has-1-cols-mobile has-3-cols-tablet has-3-cols-desktop has-3-cols-widescreen">
-    <div class="grid is-3">
-      <div class="cell">
-        <div class="footer-logo">
-          <img src="{{ '/images/' | append: metadata.logo | relative_url }}" alt="Kotai Logo" />
-          <p>a software development & </br> technology services company</p>
-        </div>  
-      </div>
-      <div class="cell">
-        <p>&copy; 2025 All rights reserved.</p>
-        <p>Made with ❤️ in Sydney & Atlanta</p>
-      </div>
-      <div class="cell">
-        <div class="social-icons">
-            <a href="https://www.facebook.com/kotai/" target="_blank" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
-            <a href="https://www.x.com/kotai" target="_blank" aria-label="X"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/kotai/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+<footer class="site-footer">
+  <div class="footer-accent"></div>
+  <div class="footer-pattern"></div>
+  <div class="footer-container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="{{ '/' | relative_url }}" class="footer-logo-btn" id="footerLogoBtn">
+          <img src="{{ '/images/' | append: metadata.logo | relative_url }}" alt="KOTAI" class="footer-logo">
+        </a>
+        <p class="footer-tagline">{{ metadata.tagline }}</p>
+        <div class="footer-contact-info">
+          <div class="footer-contact-item">
+            <i data-lucide="mail" class="footer-icon"></i>
+            <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin" class="footer-icon"></i>
+            <span>Global Presence</span>
+          </div>
         </div>
-        <div>
-          <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
-        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kotai Digital</h4>
+        <ul>
+          <li><a href="{{ '/services/' | relative_url }}">Digital Transformation</a></li>
+          <li><a href="{{ '/services/' | relative_url }}">AI Adoption</a></li>
+          <li><a href="{{ '/services/' | relative_url }}">Cloud Solutions</a></li>
+          <li><a href="{{ '/services/' | relative_url }}">Development</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kotai Fractional</h4>
+        <ul>
+          <li><a href="{{ '/services/' | relative_url }}">Fractional CTO</a></li>
+          <li><a href="{{ '/services/' | relative_url }}">Fractional CMO</a></li>
+          <li><a href="{{ '/services/' | relative_url }}">Fractional COO</a></li>
+          <li><a href="{{ '/services/' | relative_url }}">Executive Leadership</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+          <li>
+            <a href="{{ metadata.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="footer-linkedin">
+              <i data-lucide="linkedin" class="footer-icon"></i>
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 KOTAI. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
       </div>
     </div>
+
   </div>
 </footer>

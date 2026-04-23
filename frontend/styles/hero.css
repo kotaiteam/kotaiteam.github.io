@@ -1,16 +1,98 @@
-.bg-img {
-  background-image: url(../../src/images/hero-bg.jpg);
-  transform: translateZ(0);
-  will-change: transform;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #999;
+/* Hero-specific overrides only */
+
+/* Hero CTA button group */
+.hero-cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 24rem;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-/* .hero-button-position {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+@media (min-width: 640px) {
+  .hero-cta-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: none;
+  }
+}
+
+/* Digital hero buttons */
+.btn-primary-digital {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 2rem;
+  background: white;
+  color: var(--kotai-slate);
+  border: none;
+}
+
+.btn-primary-digital:hover {
+  background: var(--kotai-peach);
+  color: var(--kotai-charcoal);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+.btn-secondary-digital {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.btn-secondary-digital:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Fractional hero buttons */
+.btn-primary-fractional {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 2rem;
+  background: white;
+  color: var(--kotai-charcoal);
+  border: none;
+}
+
+.btn-primary-fractional:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--kotai-charcoal);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+.btn-secondary-fractional {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.btn-secondary-fractional:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Mobile → desktop width reset */
+@media (min-width: 640px) {
+  .btn-primary-digital,
+  .btn-secondary-digital,
+  .btn-primary-fractional,
+  .btn-secondary-fractional {
+    width: auto;
+  }
+}
