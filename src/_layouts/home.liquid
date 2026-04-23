@@ -2,11 +2,31 @@
 layout: default
 page_id: home
 ---
-{% render "hero", metadata: site.metadata %}
-{% render "stats_bar" %}
-{% render "partners" %}
-{% render "featured_work", featured_work: site.data.featured_work %}
-{% render "split_section", badge: "Infrastructure Excellence", heading: "Cloud-Native Architecture", body: "We design and implement cloud infrastructure that scales with your business needs.", checklist: "Multi-cloud architecture design,Kubernetes orchestration and management,Infrastructure as Code with Terraform", image_url: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80", image_alt: "Team collaboration on cloud systems", dot_color: "slate" %}
-{% render "split_section", badge: "Artificial Intelligence", heading: "AI & Automation at Scale", body: "We build and deploy machine learning systems that deliver measurable business outcomes.", checklist: "Custom ML model development and training,Real-time data pipelines and streaming,Production-grade Kubernetes deployment", image_url: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&q=80", image_alt: "AI and automation dashboard", dot_color: "peach", reverse: "true" %}
-{% render "cta_section", title: "Ready to Build Something Great?", body: "Let's discuss how we can transform your business with technology and leadership.", button_text: "Start Your Project →", button_href: "/contact/" %}
+
+<!-- ===== HOME DIGITAL ===== -->
+<div id="page-home-digital" class="page active">
+  {% render "hero_digital", metadata: site.metadata %}
+  {% render "stats_bar_digital" %}
+  {% render "partners" %}
+  {% render "featured_work", featured_work: site.data.featured_work %}
+  {% render "split_section", badge: "Infrastructure Excellence", heading: "Cloud-Native Architecture", body: "We design and build scalable, resilient cloud infrastructure that grows with your business. From AWS to Azure to Google Cloud, we architect solutions that maximize performance and minimize costs.", checklist: "Multi-cloud architecture design|Kubernetes orchestration and management|Infrastructure as Code with Terraform", image_url: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80", image_alt: "Team collaboration on cloud systems", dot_color: "slate", bg_class: "bg-fafafa" %}
+  {% render "split_section", badge: "Artificial Intelligence", heading: "AI & Automation at Scale", body: "Leverage machine learning and intelligent automation to unlock new capabilities. We build AI systems that process millions of data points, predict outcomes, and automate complex workflows.", checklist: "Custom ML model development and training|Real-time data pipelines and streaming|Predictive analytics platforms", image_url: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&q=80", image_alt: "AI and automation dashboard", dot_color: "peach", reverse: "true", bg_class: "bg-white" %}
+  {% render "dashboard" %}
+  {% render "tech_stack" %}
+  {% render "process_digital" %}
+  {% render "cta_section", title: "Ready to Build Something Great?", body: "Let's discuss how we can transform your business with technology and leadership.", button_text: "Start Your Project →", button_href: "/contact/", extra_class: "cta-digital" %}
+</div>
+
+<!-- ===== HOME FRACTIONAL ===== -->
+<div id="page-home-fractional" class="page">
+  {% render "hero_fractional", metadata: site.metadata %}
+  {% render "stats_bar_fractional" %}
+  {% render "fractional_roles" %}
+  {% render "split_section", badge: "Flexible Engagement", heading: "Strategic Leadership When You Need It", body: "Access C-suite expertise without the overhead. Our fractional executives integrate seamlessly into your team, bringing decades of experience and proven frameworks to accelerate your growth.", checklist: "Part-time, retainer, or project-based|Immediate impact and execution|Cost-effective leadership solution", image_url: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80", image_alt: "Executive meeting", dot_color: "slate", bg_class: "bg-fafafa" %}
+  {% render "split_section", badge: "Experienced Leaders", heading: "Proven Track Record of Success", body: "Our fractional executives have led teams at Fortune 500 companies, scaled startups to unicorn status, and navigated complex transformations. They bring battle-tested playbooks and strategic frameworks.", checklist: "Average 20+ years of leadership|Multi-industry expertise|Data-driven decision making", image_url: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80", image_alt: "Team strategy session", dot_color: "peach", reverse: "true", bg_class: "bg-white" %}
+  {% render "testimonial" %}
+  {% render "engagement_models" %}
+  {% render "cta_section", title: "Ready for Executive Leadership?", body: "Let's discuss how a fractional executive can accelerate your growth trajectory.", button_text: "Book Consultation →", button_href: "/contact/", extra_class: "cta-fractional", icon: "crown" %}
+</div>
+
 {{ content }}

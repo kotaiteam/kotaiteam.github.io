@@ -1,156 +1,108 @@
-<section class="section">
+<section class="contact-section">
   <div class="container">
-    <div class="columns">
-      <!-- Contact Info -->
-      <div class="column is-one-third contact-info">
-        <h2 class="title is-3">Get in Touch</h2>
-        <p class="subtitle is-6 mb-5">We're excited to learn about your business and explore how we can partner together.</p>
+    <div class="contact-grid">
 
-        <div class="mb-5">
-          <div class="is-flex is-align-items-center mb-4" style="gap:0.75rem;">
-            <span class="contact-icon">
-              <i data-lucide="mail" style="width:18px;height:18px;"></i>
-            </span>
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p class="contact-intro">We're excited to learn about your business and explore how we can partner together.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon peach"><i data-lucide="mail"></i></div>
             <div>
-              <p class="title is-6 mb-0">Email</p>
+              <h3>Email</h3>
               <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
             </div>
           </div>
-
-          <div class="is-flex is-align-items-center mb-4" style="gap:0.75rem;">
-            <span class="contact-icon">
-              <i data-lucide="phone" style="width:18px;height:18px;"></i>
-            </span>
+          <div class="contact-item">
+            <div class="contact-icon peach"><i data-lucide="phone"></i></div>
             <div>
-              <p class="title is-6 mb-0">Phone</p>
-              <p>+1 (555) 123-4567</p>
+              <h3>Phone</h3>
+              <a href="tel:+15551234567">+1 (555) 123-4567</a>
             </div>
           </div>
-
-          <div class="is-flex is-align-items-center mb-4" style="gap:0.75rem;">
-            <span class="contact-icon">
-              <i data-lucide="map-pin" style="width:18px;height:18px;"></i>
-            </span>
+          <div class="contact-item">
+            <div class="contact-icon peach"><i data-lucide="map-pin"></i></div>
             <div>
-              <p class="title is-6 mb-0">Office</p>
-              <p>123 Innovation Drive, San Francisco, CA 94105</p>
+              <h3>Office</h3>
+              <p>123 Innovation Drive<br>San Francisco, CA 94105</p>
             </div>
           </div>
-
-          <div class="is-flex is-align-items-center mb-4" style="gap:0.75rem;">
-            <span class="contact-icon">
-              <i data-lucide="linkedin" style="width:18px;height:18px;"></i>
-            </span>
+          <div class="contact-item">
+            <div class="contact-icon slate"><i data-lucide="linkedin"></i></div>
             <div>
-              <p class="title is-6 mb-0">LinkedIn</p>
+              <h3>LinkedIn</h3>
               <a href="{{ metadata.linkedin_url }}" target="_blank" rel="noopener noreferrer">linkedin.com/company/kotai</a>
             </div>
           </div>
         </div>
 
-        <div class="box">
-          <div class="is-flex is-align-items-center mb-3" style="gap:0.5rem;">
-            <i data-lucide="calendar" style="width:18px;height:18px;color:var(--kotai-slate);"></i>
-            <p class="title is-6 mb-0">Book a Meeting</p>
+        <!-- Calendar Booking -->
+        <div class="calendar-box">
+          <div class="calendar-header">
+            <i data-lucide="calendar"></i>
+            <h3>Book a Meeting</h3>
           </div>
-          <p class="mb-3" style="font-size:0.9rem;color:#666;">Schedule a 30-minute consultation with our team.</p>
-          <a href="#" class="button is-dark is-fullwidth">View Calendar</a>
+          <p>Schedule a 30-minute consultation to discuss your needs.</p>
+          <button class="btn btn-calendar">View Calendar</button>
         </div>
       </div>
 
       <!-- Contact Form -->
-      <div class="column contact-form-wrapper">
-        <div class="box" style="padding:2rem;">
-          <form id="contactForm">
-            <div class="columns">
-              <div class="column">
-                <div class="field">
-                  <label class="label">Name *</label>
-                  <div class="control">
-                    <input class="input" type="text" name="name" required placeholder="John Doe">
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="field">
-                  <label class="label">Company *</label>
-                  <div class="control">
-                    <input class="input" type="text" name="company" required placeholder="Company Name">
-                  </div>
-                </div>
-              </div>
+      <div class="contact-form-wrapper">
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Name *</label>
+              <input type="text" id="contact-name" name="name" required placeholder="John Doe">
             </div>
-
-            <div class="field">
-              <label class="label">Role *</label>
-              <div class="control">
-                <input class="input" type="text" name="role" required placeholder="CEO, CTO, etc.">
-              </div>
+            <div class="form-group">
+              <label for="contact-company">Company *</label>
+              <input type="text" id="contact-company" name="company" required placeholder="Company Name">
             </div>
-
-            <div class="columns">
-              <div class="column">
-                <div class="field">
-                  <label class="label">Email *</label>
-                  <div class="control">
-                    <input class="input" type="email" name="email" required placeholder="john@company.com">
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="field">
-                  <label class="label">Phone</label>
-                  <div class="control">
-                    <input class="input" type="tel" name="phone" placeholder="+1 (555) 123-4567">
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-role">Role *</label>
+            <input type="text" id="contact-role" name="role" required placeholder="CEO, CTO, etc.">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-email">Email *</label>
+              <input type="email" id="contact-email" name="email" required placeholder="john@company.com">
             </div>
-
-            <div class="field">
-              <label class="label">Service Interested In *</label>
-              <div class="control">
-                <div class="select is-fullwidth">
-                  <select name="service" required>
-                    <option value="">Select a service</option>
-                    <option value="digital">Kotai Digital</option>
-                    <option value="fractional">Kotai Fractional</option>
-                    <option value="both">Both</option>
-                  </select>
-                </div>
-              </div>
+            <div class="form-group">
+              <label for="contact-phone">Phone</label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="+1 (555) 123-4567">
             </div>
-
-            <div class="field">
-              <label class="label">Project Budget Range</label>
-              <div class="control">
-                <div class="select is-fullwidth">
-                  <select name="budget">
-                    <option value="">Select budget range</option>
-                    <option value="50k-100k">$50K - $100K</option>
-                    <option value="100k-250k">$100K - $250K</option>
-                    <option value="250k-500k">$250K - $500K</option>
-                    <option value="500k+">$500K+</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="field">
-              <label class="label">Message *</label>
-              <div class="control">
-                <textarea class="textarea" name="message" required rows="5" placeholder="Tell us about your project or needs..."></textarea>
-              </div>
-            </div>
-
-            <div class="field">
-              <div class="control">
-                <button type="submit" class="button is-dark is-fullwidth">Send Message</button>
-              </div>
-            </div>
-          </form>
-        </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-service">Service Interested In *</label>
+            <select id="contact-service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="digital">Kotai Digital</option>
+              <option value="fractional">Kotai Fractional</option>
+              <option value="both">Both</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-budget">Project Budget Range</label>
+            <select id="contact-budget" name="budget">
+              <option value="">Select budget range</option>
+              <option value="50k-100k">$50K - $100K</option>
+              <option value="100k-250k">$100K - $250K</option>
+              <option value="250k-500k">$250K - $500K</option>
+              <option value="500k+">$500K+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message *</label>
+            <textarea id="contact-message" name="message" required rows="5" placeholder="Tell us about your project or needs..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit">Send Message</button>
+        </form>
       </div>
+
     </div>
   </div>
 </section>

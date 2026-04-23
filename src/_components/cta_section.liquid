@@ -1,12 +1,12 @@
-<section class="section cta-section has-text-centered has-text-white">
+<section class="cta-section{% if extra_class %} {{ extra_class }}{% endif %}"{% if section_id %} id="{{ section_id }}"{% endif %}>
   <div class="container cta-content">
     {% if icon %}
-    <div class="mb-4">
-      <i data-lucide="{{ icon }}" style="width:40px;height:40px;color:var(--kotai-peach-dark);"></i>
+    <div class="cta-crown">
+      <i data-lucide="{{ icon }}"></i>
     </div>
     {% endif %}
-    <h2 class="title has-text-white"{% if title_id %} id="{{ title_id }}"{% endif %}>{{ title }}</h2>
-    <p class="subtitle has-text-white-ter mt-3 mb-5"{% if body_id %} id="{{ body_id }}"{% endif %}>{{ body }}</p>
-    <a href="{{ button_href }}" class="button is-white is-outlined is-medium">{{ button_text }}</a>
+    <h2{% if title_id %} id="{{ title_id }}"{% endif %}>{{ title }}</h2>
+    <p{% if body_id %} id="{{ body_id }}"{% endif %}>{{ body }}</p>
+    <a href="{{ button_href }}" class="btn btn-cta">{{ button_text }}</a>
   </div>
 </section>

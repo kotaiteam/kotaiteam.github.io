@@ -1,22 +1,22 @@
-<section class="section">
+<section class="section featured-work-section">
   <div class="container">
-    <div class="block mb-6 section-header">
-      <h2 class="title is-3">Featured Work</h2>
-      <p class="subtitle is-5">Transformative digital solutions that have driven measurable business impact.</p>
+    <div class="section-header">
+      <h2 class="title">Featured Work</h2>
+      <p>Transformative digital solutions that have driven measurable business impact for our clients.</p>
     </div>
-    <div class="columns is-multiline">
+    <div class="projects-grid">
       {% for project in featured_work %}
-        <div class="column is-half-tablet is-one-quarter-desktop project-card">
-          <div class="card" style="height:100%;">
-            <div class="card-image">
-              <figure class="image is-16by9">
-                <img src="{{ project.image }}" alt="{{ project.title }}" style="object-fit:cover;">
-              </figure>
-            </div>
-            <div class="card-content">
-              <span class="tag is-light mb-2" style="font-size:0.75rem;">{{ project.category }}</span>
-              <p class="title is-5 mt-2">{{ project.title }}</p>
-              <p class="subtitle is-6">{{ project.description }}</p>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="{{ project.image }}" alt="{{ project.title }}">
+          </div>
+          <div class="project-content">
+            <div class="project-category">{{ project.category }}</div>
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-desc">{{ project.description }}</p>
+            <div class="project-link">
+              <span>View Case Study</span>
+              <i data-lucide="arrow-right"></i>
             </div>
           </div>
         </div>

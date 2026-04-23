@@ -41,15 +41,39 @@ document.addEventListener('DOMContentLoaded', function () {
   var servicesCTAText = document.getElementById('servicesCTAText');
 
 
-  // ===== BULMA NAVBAR BURGER TOGGLE =====
-  document.querySelectorAll('.navbar-burger').forEach(function (burger) {
-    burger.addEventListener('click', function () {
-      var targetId = burger.dataset.target;
-      var target = document.getElementById(targetId);
-      burger.classList.toggle('is-active');
-      if (target) target.classList.toggle('is-active');
+  // ===== MOBILE MENU TOGGLE =====
+  var mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  var menuIconOpen = document.getElementById('menuIconOpen');
+  var menuIconClose = document.getElementById('menuIconClose');
+  var mobileMenu = document.getElementById('mobileMenu');
+  var mobileMenuOpen = false;
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', function () {
+      mobileMenuOpen = !mobileMenuOpen;
+      if (mobileMenuOpen) {
+        mobileMenu.classList.add('open');
+        menuIconOpen.classList.add('hidden');
+        menuIconClose.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.remove('open');
+        menuIconOpen.classList.remove('hidden');
+        menuIconClose.classList.add('hidden');
+      }
     });
-  });
+  }
+
+  // Close mobile menu when a link is tapped
+  if (mobileMenu) {
+    mobileMenu.querySelectorAll('.mobile-nav-link').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileMenuOpen = false;
+        mobileMenu.classList.remove('open');
+        if (menuIconOpen) menuIconOpen.classList.remove('hidden');
+        if (menuIconClose) menuIconClose.classList.add('hidden');
+      });
+    });
+  }
 
 
   // ===== SCROLL PROGRESS =====
@@ -108,24 +132,12 @@ document.addEventListener('DOMContentLoaded', function () {
       bottomToggleFractional.classList.toggle('active', mode === 'fractional');
     }
 
-    // Update stats panels (shown on home page)
-    updateStatsPanels(mode);
-
     if (currentPage === 'home') {
       updateHomePage();
     }
 
     if (currentPage === 'services') {
       updateServicesPage();
-    }
-  }
-
-  function updateStatsPanels(mode) {
-    var statsDigital = document.getElementById('statsDigital');
-    var statsFractional = document.getElementById('statsFractional');
-    if (statsDigital && statsFractional) {
-      statsDigital.style.display = mode === 'digital' ? 'block' : 'none';
-      statsFractional.style.display = mode === 'fractional' ? 'block' : 'none';
     }
   }
 

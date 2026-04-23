@@ -1,29 +1,27 @@
-<section class="section {{ bg_class }}">
-  <div class="container">
-    <div class="columns is-vcentered{% if reverse == true or reverse == 'true' %} is-flex-direction-row-reverse{% endif %}">
-      <div class="column is-half split-content">
-        {% if badge %}
-          <span class="tag is-light mb-4" style="font-size:0.8rem;">{{ badge }}</span>
-        {% endif %}
-        <h2 class="title is-3 mt-3">{{ heading }}</h2>
-        {% if body %}
-          <p class="subtitle is-5 mb-4">{{ body }}</p>
-        {% endif %}
-        {% if checklist %}
-          {% assign items = checklist | split: "," %}
+<section class="split-section {{ bg_class }}">
+  <div class="split-grid{% if reverse == true or reverse == 'true' %} reverse{% endif %}">
+    <div class="split-content">
+      {% if badge %}
+        <div class="split-badge">{{ badge }}</div>
+      {% endif %}
+      <h2>{{ heading }}</h2>
+      {% if body %}
+        <p>{{ body }}</p>
+      {% endif %}
+      {% if checklist %}
+        <div class="checklist">
+          {% assign items = checklist | split: "|" %}
           {% for item in items %}
-            <div class="is-flex is-align-items-center mb-3" style="gap:0.75rem;">
-              <span class="check-dot {{ dot_color | default: 'peach' }}"></span>
+            <div class="checklist-item">
+              <div class="check-dot {{ dot_color | default: 'peach' }}"></div>
               <p>{{ item | strip }}</p>
             </div>
           {% endfor %}
-        {% endif %}
-      </div>
-      <div class="column is-half split-image">
-        <figure class="image">
-          <img src="{{ image_url }}" alt="{{ image_alt }}" style="border-radius:8px;width:100%;object-fit:cover;max-height:400px;">
-        </figure>
-      </div>
+        </div>
+      {% endif %}
+    </div>
+    <div class="split-image">
+      <img src="{{ image_url }}" alt="{{ image_alt }}">
     </div>
   </div>
 </section>

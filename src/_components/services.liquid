@@ -1,29 +1,18 @@
 <!-- Digital Services -->
-<section id="digitalServicesContent" class="section">
+<section id="digitalServicesContent" class="services-content">
   <div class="container">
-    <div class="block has-text-centered mb-6 section-header">
-      <h2 id="servicesTitle" class="title is-3">{{ services.digital.title }}</h2>
-      <p id="servicesSubtitle" class="subtitle is-5">{{ services.digital.subtitle }}</p>
-    </div>
-    <div class="columns is-multiline">
+    <div class="services-grid">
       {% for item in services.digital.services %}
-        <div class="column is-half-tablet is-one-quarter-desktop service-card">
-          <div class="card" style="height:100%;">
-            <div class="card-content">
-              <div class="card-icon-wrapper peach-bg mb-4">
-                <i data-lucide="{{ item.icon }}" style="width:24px;height:24px;"></i>
-              </div>
-              <p class="title is-5 mb-3">{{ item.title }}</p>
-              <ul style="list-style:none;padding:0;margin:0;">
-                {% for point in item.points %}
-                  <li class="is-flex is-align-items-center mb-2" style="gap:0.6rem;">
-                    <span class="check-dot peach"></span>
-                    <span style="font-size:0.9rem;color:#555;">{{ point }}</span>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i data-lucide="{{ item.icon }}"></i>
           </div>
+          <h3>{{ item.title }}</h3>
+          <ul class="service-points">
+            {% for point in item.points %}
+              <li><span class="bullet"></span>{{ point }}</li>
+            {% endfor %}
+          </ul>
         </div>
       {% endfor %}
     </div>
@@ -31,44 +20,45 @@
 </section>
 
 <!-- Fractional Services -->
-<section id="fractionalServicesContent" class="section" style="display:none;">
+<section id="fractionalServicesContent" class="services-content" style="display:none;">
   <div class="container">
-    {% for role in services.fractional.roles %}
-      <div class="box mb-5 fractional-role-card">
-        <div class="columns">
-          <div class="column is-narrow" style="display:flex;align-items:flex-start;padding-top:0.25rem;">
-            <div class="card-icon-wrapper peach-bg">
-              <i data-lucide="{{ role.icon }}" style="width:24px;height:24px;"></i>
+    <div class="fractional-roles-list">
+      {% for role in services.fractional.roles %}
+        <div class="fractional-role-card">
+          <div class="role-header">
+            <div class="service-icon">
+              <i data-lucide="{{ role.icon }}"></i>
             </div>
-          </div>
-          <div class="column">
-            <p class="title is-4 mb-4">{{ role.title }}</p>
-            <div class="columns">
-              <div class="column">
-                <p class="role-label mb-3">Responsibilities</p>
-                <ul style="list-style:none;padding:0;margin:0;">
-                  {% for r in role.responsibilities %}
-                    <li class="is-flex is-align-items-center mb-2" style="gap:0.6rem;">
-                      <span class="check-dot slate"></span>
-                      <span style="font-size:0.9rem;color:#555;">{{ r }}</span>
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-              <div class="column">
-                <div class="box role-info-box">
-                  <p class="role-label">Ideal For</p>
-                  <p class="mb-3" style="font-size:0.9rem;">{{ role.ideal_for }}</p>
-                  <p class="role-label">Typical Engagement</p>
-                  <p class="mb-3" style="font-size:0.9rem;">{{ role.engagement }}</p>
-                  <p class="role-label">KPIs Delivered</p>
-                  <p style="font-size:0.9rem;">{{ role.kpis }}</p>
+            <div class="role-body">
+              <h3>{{ role.title }}</h3>
+              <div class="role-columns">
+                <div>
+                  <h4>Responsibilities</h4>
+                  <ul class="service-points">
+                    {% for r in role.responsibilities %}
+                      <li><span class="bullet"></span>{{ r }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                <div class="role-info-box">
+                  <div>
+                    <h4>Ideal For</h4>
+                    <p>{{ role.ideal_for }}</p>
+                  </div>
+                  <div>
+                    <h4>Typical Engagement</h4>
+                    <p>{{ role.engagement }}</p>
+                  </div>
+                  <div>
+                    <h4>KPIs Delivered</h4>
+                    <p>{{ role.kpis }}</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </section>

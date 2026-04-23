@@ -1,26 +1,29 @@
-<footer class="footer">
+<footer class="site-footer">
   <div class="footer-accent"></div>
-  <div class="container">
+  <div class="footer-pattern"></div>
+  <div class="footer-container">
 
-    {% unless page_id == 'contact' %}
-    <div class="columns">
-      <div class="column is-one-third footer-col">
-        <a href="{{ '/' | relative_url }}" id="footerLogoBtn">
-          <img src="{{ '/images/' | append: metadata.logo | relative_url }}" alt="KOTAI" style="max-width:120px; margin-bottom:1rem; filter: brightness(0) invert(1);">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="{{ '/' | relative_url }}" class="footer-logo-btn" id="footerLogoBtn">
+          <img src="{{ '/images/' | append: metadata.logo | relative_url }}" alt="KOTAI" class="footer-logo">
         </a>
-        <p class="mb-3">{{ metadata.tagline }}</p>
-        <p class="mb-2">
-          <i data-lucide="mail" style="width:14px;height:14px;vertical-align:middle;margin-right:6px;"></i>
-          <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
-        </p>
-        <p>
-          <i data-lucide="map-pin" style="width:14px;height:14px;vertical-align:middle;margin-right:6px;"></i>
-          Global Presence
-        </p>
+        <p class="footer-tagline">{{ metadata.tagline }}</p>
+        <div class="footer-contact-info">
+          <div class="footer-contact-item">
+            <i data-lucide="mail" class="footer-icon"></i>
+            <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin" class="footer-icon"></i>
+            <span>Global Presence</span>
+          </div>
+        </div>
       </div>
 
-      <div class="column footer-col">
-        <p class="title is-6">Kotai Digital</p>
+      <div class="footer-col">
+        <h4>Kotai Digital</h4>
         <ul>
           <li><a href="{{ '/services/' | relative_url }}">Digital Transformation</a></li>
           <li><a href="{{ '/services/' | relative_url }}">AI Adoption</a></li>
@@ -29,8 +32,8 @@
         </ul>
       </div>
 
-      <div class="column footer-col">
-        <p class="title is-6">Kotai Fractional</p>
+      <div class="footer-col">
+        <h4>Kotai Fractional</h4>
         <ul>
           <li><a href="{{ '/services/' | relative_url }}">Fractional CTO</a></li>
           <li><a href="{{ '/services/' | relative_url }}">Fractional CMO</a></li>
@@ -39,29 +42,29 @@
         </ul>
       </div>
 
-      <div class="column footer-col">
-        <p class="title is-6">Company</p>
+      <div class="footer-col">
+        <h4>Company</h4>
         <ul>
           <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
           <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
           <li>
-            <a href="{{ metadata.linkedin_url }}" target="_blank" rel="noopener noreferrer">
-              <i data-lucide="linkedin" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"></i>LinkedIn
+            <a href="{{ metadata.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="footer-linkedin">
+              <i data-lucide="linkedin" class="footer-icon"></i>
+              LinkedIn
             </a>
           </li>
         </ul>
       </div>
+
     </div>
-    {% endunless %}
 
-    <hr>
-
-    <div class="is-flex is-justify-content-space-between is-align-items-center footer-bottom pb-4">
+    <div class="footer-bottom">
       <p>&copy; 2026 KOTAI. All rights reserved.</p>
-      <div class="is-flex" style="gap:1rem;">
+      <div class="footer-links">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Service</a>
       </div>
     </div>
+
   </div>
 </footer>

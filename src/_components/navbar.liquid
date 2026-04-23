@@ -1,46 +1,65 @@
-<nav class="navbar is-fixed-top" id="siteHeader" role="navigation" aria-label="main navigation">
-  <div class="container">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="{{ '/' | relative_url }}" id="logoLink">
-        <img src="{{ '/images/' | append: metadata.logo | relative_url }}" alt="KOTAI" style="max-height:36px;">
-      </a>
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavMenu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
+<header class="site-header" id="siteHeader">
+  <div class="header-container">
+    <div class="header-inner">
 
-    <div id="mainNavMenu" class="navbar-menu">
-      <!-- Toggle pill (desktop center) -->
-      <div class="navbar-start is-flex is-align-items-center">
-        <div class="navbar-item">
-          <div class="toggle-container">
-            <button id="toggleDigital" class="toggle-btn active" data-mode="digital">Kotai Digital</button>
-            <button id="toggleFractional" class="toggle-btn" data-mode="fractional">Kotai Fractional</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Nav links -->
-      <div class="navbar-end">
-        {% assign current = page_id %}
-        <a href="{{ '/' | relative_url }}" class="navbar-item nav-link{% if current == 'home' %} active{% endif %}">
-          Home <span class="nav-underline"></span>
-        </a>
-        <a href="{{ '/services/' | relative_url }}" class="navbar-item nav-link{% if current == 'services' %} active{% endif %}">
-          Services <span class="nav-underline"></span>
-        </a>
-        <a href="{{ '/about/' | relative_url }}" class="navbar-item nav-link{% if current == 'about' %} active{% endif %}">
-          About Us <span class="nav-underline"></span>
-        </a>
-        <div class="navbar-item">
-          <a href="{{ '/contact/' | relative_url }}" class="button is-dark{% if current == 'contact' %} is-active{% endif %}">
-            Contact Us
+      <div class="header-left">
+        <div class="header-top-row">
+          <!-- Logo -->
+          <a href="{{ '/' | relative_url }}" class="logo-link" id="logoLink">
+            <img src="{{ '/images/' | append: metadata.logo | relative_url }}" alt="KOTAI" class="logo-img">
           </a>
+          <!-- Mobile Menu Button -->
+          <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle menu">
+            <i data-lucide="menu" class="menu-icon" id="menuIconOpen"></i>
+            <i data-lucide="x" class="menu-icon hidden" id="menuIconClose"></i>
+          </button>
         </div>
       </div>
+
+      <!-- Desktop Toggle -->
+      <div class="desktop-toggle">
+        <div class="toggle-container">
+          <button id="toggleDigital" class="toggle-btn active" data-mode="digital">
+            <span class="toggle-bg"></span>
+            <span class="toggle-text">Kotai Digital</span>
+          </button>
+          <button id="toggleFractional" class="toggle-btn" data-mode="fractional">
+            <span class="toggle-bg"></span>
+            <span class="toggle-text">Kotai Fractional</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        {% assign current = page_id %}
+        <a href="{{ '/' | relative_url }}" class="nav-link{% if current == 'home' %} active{% endif %}">
+          Home<span class="nav-underline"></span>
+        </a>
+        <a href="{{ '/services/' | relative_url }}" class="nav-link{% if current == 'services' %} active{% endif %}">
+          Services<span class="nav-underline"></span>
+        </a>
+        <a href="{{ '/about/' | relative_url }}" class="nav-link{% if current == 'about' %} active{% endif %}">
+          About Us<span class="nav-underline"></span>
+        </a>
+        <a href="{{ '/contact/' | relative_url }}" class="nav-link cta-btn{% if current == 'contact' %} active{% endif %}">
+          <span>Contact Us</span>
+        </a>
+      </nav>
+
     </div>
   </div>
-</nav>
+
+  <!-- Mobile Menu (slides down below header) -->
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="mobile-menu-inner">
+      <nav class="mobile-nav">
+        {% assign current = page_id %}
+        <a href="{{ '/' | relative_url }}" class="mobile-nav-link{% if current == 'home' %} active{% endif %}">Home</a>
+        <a href="{{ '/services/' | relative_url }}" class="mobile-nav-link{% if current == 'services' %} active{% endif %}">Services</a>
+        <a href="{{ '/about/' | relative_url }}" class="mobile-nav-link{% if current == 'about' %} active{% endif %}">About Us</a>
+        <a href="{{ '/contact/' | relative_url }}" class="mobile-nav-link mobile-cta-btn{% if current == 'contact' %} active{% endif %}">Contact Us</a>
+      </nav>
+    </div>
+  </div>
+</header>
