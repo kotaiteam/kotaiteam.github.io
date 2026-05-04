@@ -4,21 +4,29 @@ digital:
   cta_title: "Let's Build Together"
   cta_text: Discover how our technology solutions can transform your business.
   services:
+    - title: Web & Mobile Development
+      icon: smartphone
+      points:
+        - UI/UX engineering
+        - Custom web applications
+        - Responsive Mobile apps (iOS / Android)
+        - API Design & Architecture
+        - SaaS platforms
     - title: Digital Transformation
       icon: code-2
       points:
         - Legacy system modernization
-        - ERP/CRM integrations
-        - Process digitization
-        - Enterprise data strategy
+        - Omni-channel customer experience platforms
         - System architecture redesign
+        - Process & workflow automation
+        - Enterprise data strategy
     - title: AI Adoption & Automation
       icon: brain
       points:
-        - AI workflow automation
-        - Robotic Process Automation (RPA)
+        - AI Chat & Agents
+        - Agentic AI workflow automation
         - AI-powered dashboards
-        - Predictive analytics
+        - RAG & Knowledge bases
         - Internal AI copilots
     - title: Cloud Transformation
       icon: cloud
@@ -28,14 +36,6 @@ digital:
         - DevOps pipelines
         - Cloud cost optimization
         - Multi-cloud architecture
-    - title: Web & Mobile Development
-      icon: smartphone
-      points:
-        - Custom web applications
-        - SaaS platforms
-        - Mobile apps (iOS / Android)
-        - API architecture
-        - UI/UX engineering
 
 fractional:
   title: Fractional Leadership
