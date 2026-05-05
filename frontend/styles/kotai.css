@@ -740,6 +740,32 @@ body { padding-bottom: 5rem; }
   overflow: hidden;
 }
 
+.hero.is-large.hero-digital .hero-body {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .hero.is-large.hero-digital .hero-body {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero.is-large.hero-digital .hero-body {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero.is-large.hero-digital .hero-body {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+  }
+}
+
 .hero-fractional {
   background: linear-gradient(135deg, var(--kotai-charcoal), #4a4a4a, var(--kotai-charcoal));
   color: white;
@@ -812,6 +838,12 @@ body { padding-bottom: 5rem; }
 .hero-digital .title,
 .hero-fractional .title {
   color: white !important;
+}
+
+.hero-title-tagline {
+  display: inline;
+  font-size: 2rem;
+  line-height: 1.3;
 }
 
 .hero-digital .subtitle,
@@ -941,10 +973,11 @@ body { padding-bottom: 5rem; }
 /* === PARTNER LOGOS === */
 .partners-section {
   padding: 2.5rem 1.5rem;
-  background: var(--kotai-off-white);
+  background: linear-gradient(135deg, #1a1c24, #252830, #1a1c24);
 }
 @media (min-width: 640px) { .partners-section { padding: 3rem 1.5rem; } }
 @media (min-width: 1024px) { .partners-section { padding: 4rem 3rem; } }
+
 
 .partners-logos {
   display: flex;
@@ -959,13 +992,41 @@ body { padding-bottom: 5rem; }
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.6;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  opacity: 0.75;
   transition: all 0.3s;
   cursor: pointer;
 }
-.partner-logo:hover { opacity: 1; transform: scale(1.1); }
+.partner-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.partner-logo::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.85);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.partner-logo:hover::after {
+  opacity: 1;
+}
 .partner-logo svg { width: 3rem; height: 3rem; }
 @media (min-width: 640px) { .partner-logo svg { width: 3.5rem; height: 3.5rem; } }
+.partner-logo img { height: 3rem; width: auto; }
+@media (min-width: 640px) { .partner-logo img { height: 3.5rem; } }
 
 /* === DASHBOARD SECTION === */
 .dashboard-section {
