@@ -1,0 +1,42 @@
+<section class="section featured-client-work-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="title">Featured Client Work</h2>
+      <p>Real partnerships, measurable outcomes — a look at the work we have delivered for our clients.</p>
+    </div>
+    <div class="client-work-grid">
+      {% for client in client_work %}
+        <div class="client-card animate-in">
+          <div class="client-card-header">
+            <div class="client-logo-wrapper" {% if client.logo_bg %}style="background: {{ client.logo_bg }};"{% endif %}>
+              {% if client.logo %}
+                <img src="{{ client.logo | relative_url }}" alt="{{ client.name }} logo" class="client-logo">
+              {% else %}
+                <span class="client-logo-initial">{{ client.name | slice: 0 }}</span>
+              {% endif %}
+            </div>
+            <span class="client-industry-badge">{{ client.industry }}</span>
+          </div>
+          <div class="client-card-body">
+            <div class="client-name-row">
+              <h3 class="client-name">{{ client.name }}</h3>
+              <span class="client-name-divider">|</span>
+              <a href="{{ client.website }}" target="_blank" rel="noopener noreferrer" class="client-website">
+                <i data-lucide="external-link" class="client-website-icon"></i>
+                {{ client.website | remove: 'https://' | remove: 'http://' }}
+              </a>
+            </div>
+            <div class="client-area">
+              <span class="client-meta-label">Area of Business</span>
+              <p class="client-meta-value">{{ client.area_of_business }}</p>
+            </div>
+            <div class="client-services">
+              <span class="client-meta-label">Services Delivered</span>
+              <p class="client-meta-value">{{ client.kotai_services }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -2601,3 +2601,171 @@ a:hover {
 .engagement-card p {
   color: var(--kotai-slate);
 }
+
+/* === FEATURED CLIENT WORK === */
+.featured-client-work-section {
+  background: var(--kotai-off-white);
+  padding: 4rem 1.5rem;
+}
+
+@media (min-width: 640px)  { .featured-client-work-section { padding: 5rem 1.5rem; } }
+@media (min-width: 1024px) { .featured-client-work-section { padding: 6rem 3rem; } }
+
+.client-work-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 640px)  { .client-work-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .client-work-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.client-card {
+  background: var(--kotai-white);
+  border-radius: 1rem;
+  border: 1px solid rgba(51, 51, 51, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  overflow: hidden;
+}
+
+.client-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08);
+  border-color: rgba(255, 203, 181, 0.5);
+}
+
+.client-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.25rem 0;
+  gap: 0.75rem;
+}
+
+.client-logo-wrapper {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #f0f0f0;
+  border-radius: 0.625rem;
+  border: 1px solid var(--kotai-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.client-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.client-logo-initial {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-serif);
+  color: var(--kotai-slate);
+}
+
+.client-industry-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  background: var(--kotai-peach);
+  color: var(--kotai-charcoal);
+  border-radius: 9999px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  white-space: nowrap;
+}
+
+.client-card-body {
+  padding: 1rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.client-name-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.client-name-divider {
+  color: rgba(51, 51, 51, 0.3);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.client-name {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--kotai-charcoal);
+  margin: 0;
+  line-height: 1.3;
+  transition: color 0.3s;
+}
+
+.client-card:hover .client-name { color: var(--kotai-slate); }
+
+.client-website {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-family: var(--font-sans);
+  color: var(--kotai-slate);
+  text-decoration: none;
+  transition: color 0.2s;
+  word-break: break-all;
+}
+
+.client-website:hover {
+  color: var(--kotai-charcoal);
+  text-decoration: underline;
+}
+
+.client-website-icon { width: 0.75rem; height: 0.75rem; flex-shrink: 0; }
+
+.client-area,
+.client-services {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.client-meta-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--kotai-slate);
+  font-family: var(--font-sans);
+}
+
+.client-meta-value {
+  font-size: 0.8125rem;
+  color: var(--kotai-charcoal);
+  line-height: 1.55;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  margin: 0;
+}
+
+.client-services {
+  padding-top: 0.875rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--kotai-border);
+}

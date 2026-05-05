@@ -1,0 +1,90 @@
+- name: Elfi
+  industry: Banking
+  logo: /images/client_logo_elfi.svg
+  website: https://elfi.au
+  area_of_business: >
+    Compliance management platform serving banks and credit unions.
+  kotai_services: >
+    Web development and full platform overhaul, delivering a modern,
+    scalable compliance management system.
+  tech_stack: Fullstack Next.js frontend, API backend with Postgres database
+
+- name: Tummily
+  industry: Healthcare
+  logo: /images/client_logo_tummily.webp
+  website: https://tummilyapp.com
+  area_of_business: >
+    IBS symptoms management and low FODMAP meal planning for patients.
+  kotai_services: >
+    Mobile app development, admin interface, API design and development,
+    and custom CMS development.
+  tech_stack:
+
+- name: Ablefinder
+  industry: Marketplace / Disability Care
+  logo: /images/client_logo_ablefinder.webp
+  website: https://ablefinder.net.au
+  area_of_business: >
+    Marketplace connecting support seekers with support providers in the
+    disability care sector.
+  kotai_services: >
+    Mobile and web app development, admin interface, API design and
+    development, and OpenAPI integration with prompt-based matching for
+    seekers and providers.
+  tech_stack:
+
+- name: Faastaa
+  industry: Marketplace
+  logo: /images/client_logo_faastaa.svg
+  website: https://faastaa.com
+  area_of_business: >
+    Marketplace matching taskers with jobs — Thumbtack meets Uber.
+  kotai_services: >
+    Mobile and web app development, API design and development, platform
+    consolidation, and B2B to B2C transformation.
+  tech_stack:
+
+- name: Rocket App
+  industry: Fitness
+  logo: /images/client_logo_rocket.webp
+  logo_bg: "#000000"
+  website: https://joinrocket.app
+  area_of_business: >
+    Training app for triathletes, Hyrox athletes, and general workout
+    enthusiasts.
+  kotai_services: >
+    Mobile and web app development, API design and development, custom
+    CMS development with a custom algorithm to manage workout videos.
+  tech_stack:
+
+- name: BuildChain
+  industry: Building & Construction
+  logo: /images/client_logo_buildchain.webp
+  website: https://buildchain.com.au
+  area_of_business: >
+    Platform connecting construction companies to pre-vetted contractors.
+  kotai_services: >
+    Web app development.
+  tech_stack:
+
+- name: Tribe2Home
+  industry: Marketplace / Disability Care
+  logo: /images/client_logo_tribe2home.svg
+  logo_bg: "#FF6C4B"
+  website: https://tribe2home.com.au
+  area_of_business: >
+    Finding accommodations for disabled people with a matching service
+    to help find compatible flatmates.
+  kotai_services: >
+    Web app development, admin interface, and API design and development.
+  tech_stack:
+
+- name: FundPro
+  industry: Finance & VC
+  logo: /images/client_logo_fundpro.webp
+  website: https://fundpro.com.au
+  area_of_business: >
+    Internal compliance platform for venture capital clients.
+  kotai_services: >
+    Web app development and API design and development.
+  tech_stack:
