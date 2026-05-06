@@ -1810,7 +1810,7 @@ body { padding-bottom: 5rem; }
 }
 
 @media (min-width: 640px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1024px) { .team-grid { grid-template-columns: repeat(4, 1fr); gap: 2rem; } }
+@media (min-width: 1024px) { .team-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 280px)); justify-content: center; gap: 2rem; } }
 
 .team-card {
   background: white;

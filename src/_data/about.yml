@@ -20,15 +20,12 @@ values:
     icon: star
     description: We hold ourselves to the highest standards in craft, communication, and delivery — because good enough never is.
 team:
-  - name: Sarah Chen
-    title: Co-Founder & CEO
+  - name: Saurabh Bhatia
+    title: XXX
     image: https://images.unsplash.com/photo-1758518727888-ffa196002e59?w=400&q=80
-  - name: Michael Torres
-    title: Chief Technology Officer
+  - name: Rupak Ganguly
+    title: XXX
     image: https://images.unsplash.com/photo-1543132220-7bc04a0e790a?w=400&q=80
-  - name: Jessica Park
-    title: Chief Operating Officer
+  - name: Rajnikant Joshi
+    title: XXX
     image: https://images.unsplash.com/photo-1762341116897-921e2a52f7ff?w=400&q=80
-  - name: David Richardson
-    title: Head of Digital Strategy
-    image: https://images.unsplash.com/photo-1769636929261-e913ed023c83?w=400&q=80
