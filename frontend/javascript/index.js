@@ -14,8 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
   // ===== DETECT CURRENT PAGE =====
   var currentPage = document.body.getAttribute('data-page') || 'home';
 
-  // ===== MODE STATE (persisted in localStorage) =====
-  var currentMode = localStorage.getItem('kotai-mode') || 'digital';
+  // ===== MODE STATE =====
+  // Always default to 'digital' on page load so Home always opens the Digital page.
+  // TODO: Restore localStorage persistence when Fractional page comes back:
+  //   var currentMode = localStorage.getItem('kotai-mode') || 'digital';
+  var currentMode = 'digital';
 
   // ===== DOM REFERENCES =====
   var scrollProgress = document.getElementById('scrollProgress');
