@@ -772,21 +772,21 @@ body { padding-bottom: 5rem; }
 
 @media (min-width: 640px) {
   .hero.is-large.hero-digital .hero-body {
-    padding-top: 4rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media (min-width: 768px) {
   .hero.is-large.hero-digital .hero-body {
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 @media (min-width: 1024px) {
   .hero.is-large.hero-digital .hero-body {
-    padding-top: 6rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
