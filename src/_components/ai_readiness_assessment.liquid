@@ -29,13 +29,10 @@
         <div id="arQuestionView">
           <p class="ar-question" id="arQuestionText"></p>
           <div class="ar-options" id="arOptions"></div>
-          <p class="ar-hint">Choose one option, then click Next.</p>
+          <p class="ar-hint">Choose one option above. If you want to change your answer, click Previous.</p>
           <div class="ar-nav">
             <button id="arPrevBtn" class="ar-btn ar-btn-secondary" type="button">
               <i data-lucide="arrow-left"></i> Previous
-            </button>
-            <button id="arNextBtn" class="ar-btn ar-btn-primary" type="button">
-              Next <i data-lucide="arrow-right"></i>
             </button>
           </div>
         </div>
@@ -239,7 +236,6 @@
   var elResultView    = document.getElementById("arResultView");
   var elResultCard    = document.getElementById("arResultCard");
   var elPrevBtn       = document.getElementById("arPrevBtn");
-  var elNextBtn       = document.getElementById("arNextBtn");
   var elRestartBtn    = document.getElementById("arRestartBtn");
 
   function calculateScores() {
@@ -282,10 +278,6 @@
     if (window.lucide) { lucide.createIcons(); }
 
     elPrevBtn.disabled = currentIndex === 0;
-    elNextBtn.disabled = selectedAnswer === null;
-    elNextBtn.innerHTML = currentIndex === totalQuestions - 1
-      ? "Finish <i data-lucide=\"check\"></i>"
-      : "Next <i data-lucide=\"arrow-right\"></i>";
     if (window.lucide) { lucide.createIcons(); }
   }
 
@@ -358,13 +350,6 @@
 
   elPrevBtn.addEventListener("click", function () {
     if (currentIndex > 0) { currentIndex -= 1; renderQuestion(); }
-  });
-
-  elNextBtn.addEventListener("click", function () {
-    if (answers[currentIndex] === null) return;
-    if (currentIndex >= totalQuestions - 1) { renderResult(); return; }
-    currentIndex += 1;
-    renderQuestion();
   });
 
   elRestartBtn.addEventListener("click", function () {
