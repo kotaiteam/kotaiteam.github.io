@@ -1,0 +1,367 @@
+<!-- AI Readiness Self-Assessment Quiz -->
+<section class="ai-readiness-section">
+  <div class="ai-readiness-container">
+    <div class="ar-card">
+
+      <!-- Card Header -->
+      <div class="ar-card-header">
+        <h2>AI Readiness Self-Assessment</h2>
+        <div class="ar-header-meta">
+          <p>Time to complete: ~5 minutes</p>
+        </div>
+      </div>
+
+      <!-- Card Body -->
+      <div class="ar-card-body">
+
+        <!-- Progress meta -->
+        <div id="arMetaRow" class="ar-meta-row">
+          <span id="arSectionBadge" class="ar-badge">Section 1</span>
+          <span id="arCountText" class="ar-badge">Question 1 / 12</span>
+        </div>
+
+        <!-- Progress bar -->
+        <div id="arProgressWrap" class="ar-progress">
+          <span id="arProgressFill" class="ar-progress-fill"></span>
+        </div>
+
+        <!-- Question view -->
+        <div id="arQuestionView">
+          <p class="ar-question" id="arQuestionText"></p>
+          <div class="ar-options" id="arOptions"></div>
+          <p class="ar-hint">Choose one option above. If you want to change your answer, click Previous.</p>
+          <div class="ar-nav">
+            <button id="arPrevBtn" class="ar-btn ar-btn-secondary" type="button">
+              <i data-lucide="arrow-left"></i> Previous
+            </button>
+          </div>
+        </div>
+
+        <!-- Result view (hidden until complete) -->
+        <div id="arResultView" style="display:none;">
+          <div id="arResultCard" class="ar-result-card"></div>
+          <div class="ar-result-cta">
+            <h3>Ready to accelerate your AI journey?</h3>
+            <p>Our experts at Kotai will walk you through a personalised roadmap — tailored to your score and industry.</p>
+            <div class="ar-result-actions">
+              <a class="ar-btn ar-btn-peach" href="{{ '/contact/' | relative_url }}">
+                <i data-lucide="calendar"></i> Book a free strategy session
+              </a>
+              <button id="arRestartBtn" class="ar-btn ar-btn-secondary" type="button">
+                <i data-lucide="rotate-ccw"></i> Restart Assessment
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var sections = [
+    {
+      title: "Business Alignment",
+      max: 6,
+      questions: [
+        {
+          text: "We have a clearly defined business problem AI could help solve",
+          options: [
+            "Problem unclear or not documented.",
+            "Problem discussed, but not finalized.",
+            "Problem mostly clear with some gaps.",
+            "Problem clearly defined with business context.",
+          ],
+        },
+        {
+          text: "Success metrics for an AI initiative are clearly defined",
+          options: [
+            "No success metrics are defined.",
+            "Basic metrics exist but are not measurable.",
+            "Most success metrics are measurable.",
+            "Clear measurable KPIs are fully defined.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Process Maturity",
+      max: 6,
+      questions: [
+        {
+          text: "The process we want to improve is documented or well understood",
+          options: [
+            "Process is not documented.",
+            "Some parts are documented.",
+            "Most process steps are documented.",
+            "Process is fully documented and understood.",
+          ],
+        },
+        {
+          text: "The process runs frequently enough to justify automation",
+          options: [
+            "Process is rare; automation not useful.",
+            "Process happens occasionally.",
+            "Process is frequent in some teams.",
+            "Process is frequent and high-volume.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Data Readiness",
+      max: 6,
+      questions: [
+        {
+          text: "Relevant data already exists",
+          options: [
+            "Required data is missing.",
+            "Some required data exists.",
+            "Most required data exists.",
+            "All key data is available and usable.",
+          ],
+        },
+        {
+          text: "Data ownership and access permissions are clear",
+          options: [
+            "No clear data owner or access rules.",
+            "Ownership or access is partially defined.",
+            "Ownership and access are mostly clear.",
+            "Ownership and access control are fully clear.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Technology Readiness",
+      max: 6,
+      questions: [
+        {
+          text: "Our systems support APIs or integrations",
+          options: [
+            "Systems are isolated; no integration support.",
+            "Limited integrations are available.",
+            "Most core systems support integration.",
+            "Strong API/integration support is in place.",
+          ],
+        },
+        {
+          text: "We can support deployment and monitoring",
+          options: [
+            "No deployment/monitoring process for AI.",
+            "Basic deployment exists; monitoring is weak.",
+            "Deployment and monitoring are mostly ready.",
+            "Reliable deployment and monitoring are fully ready.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "People & Change Readiness",
+      max: 6,
+      questions: [
+        {
+          text: "Leadership supports AI initiatives",
+          options: [
+            "Leadership is not aligned on AI.",
+            "Some leaders support AI informally.",
+            "Most leadership supports AI direction.",
+            "Leadership actively sponsors AI initiatives.",
+          ],
+        },
+        {
+          text: "There is a clear owner for AI initiatives",
+          options: [
+            "No owner assigned for AI work.",
+            "Temporary owner exists but unclear role.",
+            "Owner is mostly defined with responsibilities.",
+            "Clear accountable owner is fully assigned.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Risk & Governance Awareness",
+      max: 6,
+      questions: [
+        {
+          text: "We understand where human review is required",
+          options: [
+            "No clear human-review checkpoints.",
+            "Few review points are identified.",
+            "Most review points are identified.",
+            "Human-review checkpoints are clearly defined.",
+          ],
+        },
+        {
+          text: "We have guardrails for responsible AI use",
+          options: [
+            "No responsible AI guardrails exist.",
+            "Basic guidelines exist but are incomplete.",
+            "Guardrails exist for most major risks.",
+            "Strong responsible-AI guardrails are implemented.",
+          ],
+        },
+      ],
+    },
+  ];
+
+  var flatQuestions = [];
+  sections.forEach(function (section, sectionIndex) {
+    section.questions.forEach(function (question) {
+      flatQuestions.push({
+        sectionIndex: sectionIndex,
+        sectionTitle: section.title,
+        text: question.text,
+        options: question.options,
+      });
+    });
+  });
+
+  var totalQuestions = flatQuestions.length;
+  var maxScore = sections.reduce(function (sum, s) { return sum + s.max; }, 0);
+  var currentIndex = 0;
+  var answers = new Array(totalQuestions).fill(null);
+
+  var elSectionBadge  = document.getElementById("arSectionBadge");
+  var elCountText     = document.getElementById("arCountText");
+  var elMetaRow       = document.getElementById("arMetaRow");
+  var elProgressWrap  = document.getElementById("arProgressWrap");
+  var elProgressFill  = document.getElementById("arProgressFill");
+  var elQuestionText  = document.getElementById("arQuestionText");
+  var elOptions       = document.getElementById("arOptions");
+  var elQuestionView  = document.getElementById("arQuestionView");
+  var elResultView    = document.getElementById("arResultView");
+  var elResultCard    = document.getElementById("arResultCard");
+  var elPrevBtn       = document.getElementById("arPrevBtn");
+  var elRestartBtn    = document.getElementById("arRestartBtn");
+
+  function calculateScores() {
+    var sectionScores = sections.map(function () { return 0; });
+    var totalScore = 0;
+    answers.forEach(function (score, index) {
+      if (score !== null) {
+        sectionScores[flatQuestions[index].sectionIndex] += score;
+        totalScore += score;
+      }
+    });
+    return { sectionScores: sectionScores, totalScore: totalScore };
+  }
+
+  function renderQuestion() {
+    var question = flatQuestions[currentIndex];
+    var progress = ((currentIndex + 1) / totalQuestions) * 100;
+    var selectedAnswer = answers[currentIndex];
+
+    elSectionBadge.textContent = "Section " + (question.sectionIndex + 1) + ": " + question.sectionTitle;
+    elCountText.textContent = "Question " + (currentIndex + 1) + " / " + totalQuestions;
+    elProgressFill.style.width = progress + "%";
+    elQuestionText.textContent = question.text;
+
+    elOptions.innerHTML = "";
+    question.options.forEach(function (optionText, score) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "ar-option-btn" + (selectedAnswer === score ? " selected" : "");
+      btn.innerHTML =
+        "<span class='ar-option-score'>" + score + "/3</span>" +
+        "<span class='ar-option-content'>" +
+          "<span class='ar-option-text'>" + optionText + "</span>" +
+        "</span>";
+      btn.addEventListener("click", function () { handleAnswer(score); });
+      elOptions.appendChild(btn);
+    });
+
+    // Re-render lucide icons inside new buttons
+    if (window.lucide) { lucide.createIcons(); }
+
+    elPrevBtn.disabled = currentIndex === 0;
+    if (window.lucide) { lucide.createIcons(); }
+  }
+
+  function handleAnswer(score) {
+    answers[currentIndex] = score;
+    if (currentIndex >= totalQuestions - 1) {
+      renderResult();
+      return;
+    }
+    currentIndex += 1;
+    renderQuestion();
+  }
+
+  function scoreMessage(score) {
+    if (score >= 28) {
+      return {
+        title: "AI Ready",
+        nextStep: "Identify 1–2 high-ROI use cases and start building.",
+        text: "You are well-positioned to move directly into a pilot or production AI initiative.",
+        className: "ar-result-ready",
+      };
+    }
+    if (score >= 19) {
+      return {
+        title: "AI Emerging",
+        nextStep: "Run an AI discovery or readiness workshop.",
+        text: "You have strong foundations but gaps in clarity, data, or execution.",
+        className: "ar-result-emerging",
+      };
+    }
+    return {
+      title: "AI Exploration Stage",
+      nextStep: "Focus on process clarity, data access, and education.",
+      text: "AI could add value, but fundamentals need work first.",
+      className: "ar-result-explore",
+    };
+  }
+
+  function renderResult() {
+    var scores = calculateScores();
+    var result = scoreMessage(scores.totalScore);
+
+    elQuestionView.style.display = "none";
+    elResultView.style.display = "block";
+    elMetaRow.style.display = "none";
+    elProgressWrap.style.display = "none";
+
+    elResultCard.className = "ar-result-card " + result.className;
+
+    var sectionHtml = "<div class='ar-section-scores'><strong>Section Scores</strong><ul>";
+    sections.forEach(function (section, index) {
+      sectionHtml += "<li><span>" + section.title + "</span><strong>" + scores.sectionScores[index] + " / " + section.max + "</strong></li>";
+    });
+    sectionHtml += "</ul></div>";
+
+    elResultCard.innerHTML =
+      "<p class='ar-result-status-badge'>Assessment Complete</p>" +
+      "<div class='ar-score-line'>" +
+        "<span class='ar-score-label'>Your Total AI Readiness Score</span>" +
+        "<span class='ar-score-value'>" + scores.totalScore + " / " + maxScore + "</span>" +
+      "</div>" +
+      "<h2>" + result.title + "</h2>" +
+      "<p>" + result.text + "</p>" +
+      "<p><strong>Next step:</strong> " + result.nextStep + "</p>" +
+      sectionHtml;
+
+    // Scroll card into view
+    elResultCard.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  elPrevBtn.addEventListener("click", function () {
+    if (currentIndex > 0) { currentIndex -= 1; renderQuestion(); }
+  });
+
+  elRestartBtn.addEventListener("click", function () {
+    currentIndex = 0;
+    answers = new Array(totalQuestions).fill(null);
+    elQuestionView.style.display = "block";
+    elResultView.style.display = "none";
+    elMetaRow.style.display = "flex";
+    elProgressWrap.style.display = "block";
+    renderQuestion();
+  });
+
+  renderQuestion();
+})();
+</script>
