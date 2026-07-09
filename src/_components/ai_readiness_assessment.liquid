@@ -362,6 +362,20 @@
       sections.forEach(function (section, index) {
         sectionBreakdown[section.title] = scores.sectionScores[index] + ' / ' + section.max;
       });
+
+      // Build full Q&A transcript grouped by section
+      var responseLines = [];
+      sections.forEach(function (section) {
+        responseLines.push('--- ' + section.title + ' ---');
+        flatQuestions.forEach(function (q, i) {
+          if (q.sectionTitle === section.title) {
+            responseLines.push('Q: ' + q.text);
+            responseLines.push('A: ' + q.options[answers[i]] + ' (' + answers[i] + '/3)');
+            responseLines.push('');
+          }
+        });
+      });
+
       fetch(endpoint, {
         method: 'POST',
         headers: {
@@ -373,7 +387,8 @@
           score: scores.totalScore + ' / ' + maxScore,
           tier: result.title,
           next_step: result.nextStep,
-          section_scores: JSON.stringify(sectionBreakdown)
+          section_scores: JSON.stringify(sectionBreakdown),
+          responses: responseLines.join('\n')
         })
       }).catch(function (err) {
         console.error('Formspree error:', err);
