@@ -1,5 +1,5 @@
 <!-- AI Readiness Self-Assessment Quiz -->
-<section class="ai-readiness-section">
+<section class="ai-readiness-section" data-form-endpoint="{{ metadata.ai_readiness_form_endpoint }}">
   <div class="ai-readiness-container">
     <div class="ar-card">
 
@@ -40,6 +40,9 @@
         <!-- Result view (hidden until complete) -->
         <div id="arResultView" style="display:none;">
           <div id="arResultCard" class="ar-result-card"></div>
+          <div id="arSubmitConfirmation" class="ar-submit-confirmation" style="display:none;">
+            <i data-lucide="check-circle"></i> Your assessment has been recorded and sent.
+          </div>
           <div class="ar-result-cta">
             <h3>Ready to accelerate your AI journey?</h3>
             <p>Our experts at Kotai will walk you through a personalised roadmap — tailored to your score and industry.</p>
@@ -343,6 +346,39 @@
       "<p>" + result.text + "</p>" +
       "<p><strong>Next step:</strong> " + result.nextStep + "</p>" +
       sectionHtml;
+
+    // Show confirmation banner immediately
+    var confirmation = document.getElementById('arSubmitConfirmation');
+    confirmation.style.display = 'flex';
+    if (window.lucide) { lucide.createIcons(); }
+    setTimeout(function () {
+      confirmation.style.display = 'none';
+    }, 5000);
+
+    // Send results to Formspree in the background
+    var endpoint = document.querySelector('.ai-readiness-section').dataset.formEndpoint;
+    if (endpoint) {
+      var sectionBreakdown = {};
+      sections.forEach(function (section, index) {
+        sectionBreakdown[section.title] = scores.sectionScores[index] + ' / ' + section.max;
+      });
+      fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: 'AI Readiness Assessment Result — kotai.team',
+          score: scores.totalScore + ' / ' + maxScore,
+          tier: result.title,
+          next_step: result.nextStep,
+          section_scores: JSON.stringify(sectionBreakdown)
+        })
+      }).catch(function (err) {
+        console.error('Formspree error:', err);
+      });
+    }
 
     // Scroll card into view
     elResultCard.scrollIntoView({ behavior: "smooth", block: "start" });
