@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% render "page_hero",
+   heading: "Case Studies",
+   subheading: "Real-world digital products we've built — from concept to launch." %}
+{% render "casestudies_highlights", casestudies: site.data.casestudies.index %}
+{% render "casestudies_grid", casestudies: site.data.casestudies.index %}
+{% render "cta_section",
+   title: "Ready to Build Your Next Digital Product?",
+   body: "From concept to launch, we help teams build scalable digital products with clarity, speed, and long-term impact.",
+   button_text: "Contact Us",
+   button_href: "/contact/",
+   extra_class: "cta-digital" %}

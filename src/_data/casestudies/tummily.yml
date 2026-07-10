@@ -1,0 +1,104 @@
+title: Tummily
+slug: tummily
+image_ext: png
+industry: Digital Health / Gut Health / IBS Management
+
+tags:
+  - label: "Low FODMAP Diet Planning"
+    style: secondary
+  - label: "Symptom Tracking & Insights"
+    style: primary
+  - label: "Dietitian-Designed IBS Support"
+    style: secondary
+
+hero_stats:
+  - value: "60%"
+    label: Reduced meal-planning confusion.
+  - value: "45%"
+    label: Better symptom tracking consistency.
+  - value: "35%"
+    label: Faster preparation for clinician appointments.
+
+overview: >-
+  Tummily is a personalized IBS and low FODMAP diet support platform that helps users manage digestive
+  symptoms with confidence. Tummily provides dietitian-designed meal plans, recipes, shopping lists,
+  food and symptom tracking, smart health insights, and exportable PDF reports for clinician consultations.
+
+business_problems:
+  - IBS users often feel overwhelmed by complex low FODMAP food lists and portion confusion.
+  - Users struggle to identify personal food and lifestyle triggers.
+  - Symptom tracking can feel time-consuming and inconsistent.
+  - Meal planning becomes restrictive, repetitive, and stressful.
+  - Users need clearer reports to discuss symptoms with doctors or clinicians.
+
+objectives_intro: >-
+  Redefining IBS diet management through personalized, practical, and clinically guided digital support.
+
+objectives:
+  - Improve user confidence in following a low FODMAP diet.
+  - Increase consistency in food, symptom, bowel movement, and lifestyle tracking.
+  - Reduce daily meal-planning effort through personalized meal suggestions.
+  - Support better clinician conversations through PDF health reports.
+  - Improve long-term dietary adherence without unnecessary restriction.
+
+ai_functionality:
+  - AI-driven insights help users understand symptom patterns and possible triggers.
+  - Smart recommendations connect food, stress, menstrual cycle, medication, and symptom data.
+  - Personalized meal planning adapts to allergies, intolerances, dislikes, and preferences.
+  - Data summaries support easier clinical review and follow-up care.
+
+impact_of_challenges:
+  - Simplifies complex IBS diet management into daily guided actions.
+  - Reduces anxiety around food choices and restrictive eating.
+  - Helps users stay prepared before digestive flare-ups.
+  - Converts scattered health tracking into meaningful insights.
+  - Bridges the communication gap between users and healthcare providers.
+
+solution_items:
+  - Developed a mobile-first low FODMAP diet and symptom management app.
+  - Integrated personalized meal plans for breakfast, lunch, snacks, dinner, desserts, and drinks.
+  - Added easy meal swaps and macronutrient goal planning.
+  - Included smart shopping lists generated from meal plans.
+  - Enabled food, symptom, bowel movement, and lifestyle tracking.
+  - Provided exportable PDF reports for doctors and clinicians.
+
+tech_tags:
+  - Mobile App
+  - Dietitian Designed
+  - Low FODMAP
+  - Health Insights
+
+customizations:
+  - Personalized meal plans based on allergies, intolerances, dislikes, and preferences.
+  - Flexible recipe and meal-swap options.
+  - Smart shopping list generation from selected meals.
+  - Symptom and trigger tracking for IBS, IBD, SIBO, endometriosis, and digestive issues.
+  - PDF report export for healthcare appointments.
+
+implementation_phases:
+  - label: Phase 1
+    description: Research, IBS user needs analysis, and low FODMAP content structure.
+  - label: Phase 2
+    description: Meal planning, recipe database, preference mapping, and shopping list generation.
+  - label: Phase 3
+    description: Symptom tracking, food diary, bowel movement tracking, and lifestyle factor logging.
+  - label: Phase 4
+    description: Smart insights, PDF reports, app launch, and user onboarding.
+
+execution_intro: >-
+  Agile methodology was used to build, test, and refine the app experience. The focus remained on
+  simplifying IBS management, improving usability, and helping users feel supported rather than restricted.
+
+quantitative_results:
+  - value: "60%"
+    label: Reduced confusion around low FODMAP meal planning.
+  - value: "45%"
+    label: Improved tracking of food, symptoms, and lifestyle factors.
+  - value: "35%"
+    label: Faster preparation for clinical consultations through PDF reports.
+
+qualitative_results:
+  - Users can enjoy structured meals without feeling restricted.
+  - Improved confidence in identifying personal symptom triggers.
+  - Better preparation before doctor and clinician appointments.
+  - More practical, personalized, and supportive IBS management experience.

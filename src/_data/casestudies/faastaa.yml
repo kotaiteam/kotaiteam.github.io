@@ -1,0 +1,118 @@
+title: Faastaa
+slug: faastaa
+image_ext: jpg
+industry: Home Services Marketplace
+
+tags:
+  - label: "Real-Time Task Matching"
+    style: secondary
+  - label: "On-Demand Home Services"
+    style: primary
+  - label: "Smart Tasker Allocation Platform"
+    style: secondary
+
+hero_stats:
+  - value: "60%"
+    label: Faster customer-to-tasker matching.
+  - value: "45%"
+    label: Reduced manual bidding and negotiation effort.
+  - value: "35%"
+    label: Improved task completion efficiency.
+
+overview: >-
+  Faastaa is a real-time home services marketplace designed to instantly connect customers with
+  available and qualified local taskers without the traditional bidding process. The platform automates
+  task matching using smart allocation logic based on availability, skillset, location, budget,
+  preferences, ratings, and work categories. Faastaa simplifies the process of finding trusted
+  professionals for home services including cleaning, removals, plumbing, electrical work, gardening,
+  furniture assembly, handyman services, and more.
+
+business_problems:
+  - Traditional task marketplaces rely heavily on slow manual bidding and quote comparisons.
+  - Customers often waste time reviewing large volumes of unsuitable responses.
+  - Taskers spend excessive time pitching for work instead of completing jobs.
+  - Difficulty in instantly finding available and qualified professionals nearby.
+  - Trust and transparency issues exist in home-service marketplaces.
+  - Female customers may prefer female tradies but lack filtering options.
+  - Scheduling conflicts frequently occur between taskers and customer bookings.
+
+objectives_intro: >-
+  Creating a faster, automated, and trust-driven home services platform that removes friction from
+  task discovery, task assignment, communication, and payment management.
+
+objectives:
+  - Reduce customer wait time for finding suitable taskers.
+  - Eliminate unnecessary bidding and negotiation complexity.
+  - Improve task allocation efficiency using real-time matching.
+  - Increase customer trust through reviews, ratings, video bios, and verified profiles.
+  - Enable secure and seamless communication between customers and taskers.
+  - Improve tasker utilization and availability management.
+
+ai_functionality:
+  - Automated task matching engine allocates jobs based on skillset, location, availability, and budget.
+  - Smart calendar integration validates tasker availability before assignment.
+  - Intelligent radius and category filtering improves match accuracy.
+  - Automated offer handling reduces manual back-and-forth communication.
+  - Matching preferences support female customers requesting female tradies or taskers.
+
+impact_of_challenges:
+  - Removes the frustration of manual quote comparisons and delayed responses.
+  - Helps taskers receive work opportunities instantly instead of searching continuously.
+  - Improves trust through verified reviews, ratings, work galleries, licences, and video biographies.
+  - Simplifies task management through real-time chat and secure payment handling.
+  - Reduces scheduling conflicts using integrated availability checks.
+  - Creates a seamless "Uber-like" experience for home services and task-based work.
+
+solution_items:
+  - Developed an automated real-time task-matching marketplace platform.
+  - Enabled customers to post tasks with descriptions, videos, photos, budgets, and requirements.
+  - Added instant tasker allocation based on smart matching algorithms.
+  - Integrated secure in-app chat and Stripe payment handling.
+  - Added tasker profiles with reviews, ratings, licences, qualifications, galleries, and video bios.
+  - Enabled taskers to manage work radius, categories, availability, and job preferences.
+  - Implemented secure payment release only after customer approval of completed work.
+
+tech_tags:
+  - Real-Time Matching
+  - Secure Payments
+  - Tasker Marketplace
+  - Instant Chat
+
+customizations:
+  - Video biography support for taskers to improve trust and transparency.
+  - Calendar-based availability validation before task assignment.
+  - Real-time SMS notifications for instant task allocation.
+  - Distance radius controls for localized task opportunities.
+  - Female tradie preference support for women customers.
+  - Multi-category home service support including plumbing, electrical, removals, gardening, handyman work, and cleaning.
+  - Automated budget-range matching without open bidding exposure.
+
+implementation_phases:
+  - label: Phase 1
+    description: Marketplace research, workflow planning, and customer-tasker interaction design.
+  - label: Phase 2
+    description: Task posting system, tasker onboarding, profile management, and secure payment integration.
+  - label: Phase 3
+    description: Real-time task-matching engine, calendar integration, instant notifications, and in-app chat.
+  - label: Phase 4
+    description: Launch rollout, mobile optimization, tasker growth expansion, and customer onboarding.
+
+execution_intro: >-
+  Agile methodology was used to rapidly develop and optimize the real-time task allocation platform.
+  The focus remained on reducing friction, improving trust, simplifying communication, and creating a
+  fast "post, match, approve" workflow for both customers and taskers.
+
+quantitative_results:
+  - value: "60%"
+    label: Faster customer-to-tasker matching through automated allocation.
+  - value: "45%"
+    label: Reduced manual bidding effort through smart matching logic.
+  - value: "35%"
+    label: Improved task completion efficiency through structured workflows.
+
+qualitative_results:
+  - Customers can find and book qualified professionals without manual quote comparisons.
+  - Taskers receive instant job opportunities matched to their skills and availability.
+  - Trust is improved through verified profiles, reviews, video bios, and secure payments.
+  - Real-time chat and payment controls create a safer marketplace experience.
+  - Faastaa creates a faster, more transparent, and more reliable home services ecosystem.

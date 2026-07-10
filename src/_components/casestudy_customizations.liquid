@@ -1,0 +1,21 @@
+<section class="cs-section-tint">
+  <div class="cs-container">
+    <div class="cs-two-col">
+      <!-- Left: features image -->
+      <div class="cs-img-wrap">
+        <img
+          src="{{ '/images/casestudies/' | append: cs.slug | append: '/features.' | append: cs.image_ext | relative_url }}"
+          alt="{{ cs.title }} highlighted features">
+      </div>
+      <!-- Right: customizations list -->
+      <div>
+        <h2 class="cs-h2" style="margin-bottom:1.5rem;">Customizations</h2>
+        <ul class="cs-list cs-list--default">
+          {% for item in cs.customizations %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

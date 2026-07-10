@@ -1,0 +1,111 @@
+title: AbleFinder
+slug: ablefinder
+image_ext: jpg
+industry: Disability Services / NDIS
+
+tags:
+  - label: "NDIS Support Matching"
+    style: secondary
+  - label: "AI Smart Provider Discovery"
+    style: primary
+  - label: "Community Trust & Reviews"
+    style: secondary
+
+hero_stats:
+  - value: "60%"
+    label: Faster provider discovery.
+  - value: "45%"
+    label: Improved trust in provider selection.
+  - value: "35%"
+    label: Reduced manual coordination effort.
+
+overview: >-
+  AbleFinder is an NDIS support connection platform designed to help participants, carers, and support
+  coordinators find trusted providers based on real needs, location, availability, values, reviews, and
+  community reputation. The platform allows participants to create support requests for free, while
+  providers respond through a safe, transparent, subscription-based model.
+
+business_problems:
+  - Participants often struggle to find trusted NDIS providers beyond basic directory listings.
+  - Support discovery can be fragmented, manual, and dependent on word-of-mouth.
+  - Participants need providers who match personal preferences such as language, culture, gender, religion, LGBTQIA+ inclusivity, and availability.
+  - Provider reputation is difficult to verify through traditional search methods.
+  - Communication between participants and providers often happens outside secure and structured platforms.
+
+objectives_intro: >-
+  Creating a trusted, participant-led NDIS support network where the right providers can respond
+  with care, transparency, and confidence.
+
+objectives:
+  - Improve speed and accuracy of provider matching.
+  - Increase participant confidence through ratings, reviews, endorsements, and trust scores.
+  - Enable safer communication between participants and providers.
+  - Support values-based provider discovery.
+  - Build a visible reputation system for high-quality NDIS providers.
+  - Reduce dependency on manual referrals and disconnected networking.
+
+ai_functionality:
+  - AI smart matching connects participant requests with suitable providers.
+  - Matching considers service type, location, availability, preferences, and provider reviews.
+  - Automated provider recommendations reduce manual searching.
+  - Trust signals help participants make informed decisions.
+  - Matching filters support cultural, personal, and accessibility-based preferences.
+
+impact_of_challenges:
+  - Turns informal word-of-mouth referrals into a structured digital trust network.
+  - Reduces overwhelm for participants searching for suitable support.
+  - Helps providers build credibility through verified reviews, endorsements, and quality badges.
+  - Improves transparency before participant details are shared.
+  - Creates safer, more confident provider engagement through monitored real-time chat.
+
+solution_items:
+  - Developed a participant-led request and provider response platform.
+  - Enabled participants, carers, and support coordinators to create free support requests.
+  - Added AI-based provider matching using location, service, availability, reviews, and personal preferences.
+  - Integrated real-time secure chat for participant-provider communication.
+  - Added community-rated providers, reviews, endorsements, trust scores, and quality assurance badges.
+  - Introduced provider subscription pricing with no extra commission fees.
+
+tech_tags:
+  - NDIS Platform
+  - AI Matching
+  - Secure Chat
+  - Trust Score
+
+customizations:
+  - Values-based filters for LGBTQIA+ inclusivity, cultural background, gender preference, language, and religious/spiritual alignment.
+  - Trust Score based on registration, reviews, endorsements, credentials, and engagement.
+  - Peer-powered referral and endorsement chains.
+  - Gamified excellence badges and tiered provider recognition.
+  - Human-led concierge onboarding and conflict support through Able2Help.
+  - State-based provider subscription model.
+
+implementation_phases:
+  - label: Phase 1
+    description: NDIS community research, participant needs mapping, and request flow design.
+  - label: Phase 2
+    description: Provider onboarding, profile setup, service categorization, and subscription model configuration.
+  - label: Phase 3
+    description: AI smart matching, values-based filters, trust score, reviews, endorsements, and secure chat.
+  - label: Phase 4
+    description: NSW launch, waiting list expansion, community onboarding, provider reputation building, and state-wise rollout.
+
+execution_intro: >-
+  The platform was designed around community trust, inclusion, and participant control. The execution
+  focused on making support discovery safer, more personal, and more transparent by combining AI matching,
+  provider reputation signals, human-led onboarding, and secure communication.
+
+quantitative_results:
+  - value: "60%"
+    label: Faster discovery of suitable NDIS support providers.
+  - value: "45%"
+    label: Improved confidence through trust scores, reviews, and endorsements.
+  - value: "35%"
+    label: Reduced coordination effort through request-based matching and secure chat.
+
+qualitative_results:
+  - Participants can search for support based on real personal needs.
+  - Providers gain visibility through reputation, quality badges, and community endorsements.
+  - Support coordinators and carers can reduce manual provider discovery effort.
+  - Safer communication is enabled before personal details are shared.
+  - AbleFinder creates a more inclusive, transparent, and trusted NDIS support ecosystem.

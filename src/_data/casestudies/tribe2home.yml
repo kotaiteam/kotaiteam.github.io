@@ -1,0 +1,111 @@
+title: Tribe2Home
+slug: tribe2home
+image_ext: png
+industry: Disability Services / NDIS / Shared Living
+
+tags:
+  - label: "NDIS Housemate Matching"
+    style: secondary
+  - label: "Shared Living Compatibility Platform"
+    style: primary
+  - label: "Reduced Housing Vacancy Time"
+    style: secondary
+
+hero_stats:
+  - value: "60%"
+    label: Faster compatible housemate discovery.
+  - value: "45%"
+    label: Improved shared-living match confidence.
+  - value: "35%"
+    label: Reduced vacancy and coordination delays.
+
+overview: >-
+  Tribe2Home is a technology platform created to help people find the right housemate to share their
+  home. The platform connects NDIS participants, support coordinators, and providers in one place to
+  enable meaningful connections, improve housemate compatibility, and reduce vacancy time.
+
+business_problems:
+  - NDIS participants may struggle to find compatible housemates for shared living.
+  - Support coordinators and providers often rely on manual referrals and disconnected communication.
+  - Housing vacancies can remain open for longer due to poor visibility and limited matching tools.
+  - Compatibility between housemates is difficult to assess without a structured platform.
+  - Participants need safer, more meaningful connections before committing to shared living.
+
+objectives_intro: >-
+  Creating a trusted shared-living connection platform that helps NDIS participants, support
+  coordinators, and providers find compatible housemates faster and more confidently.
+
+objectives:
+  - Improve housemate discovery for NDIS participants.
+  - Reduce vacancy time for shared living homes.
+  - Centralize participant, coordinator, and provider connections.
+  - Improve compatibility-based matching.
+  - Reduce manual coordination effort.
+  - Support more meaningful and suitable shared-home arrangements.
+
+ai_functionality:
+  - Smart compatibility matching based on participant needs and shared-living preferences.
+  - Automated filtering to identify suitable housemate opportunities.
+  - Matching logic to support better participant-provider-coordinator connections.
+  - Intelligent vacancy visibility to reduce time spent searching manually.
+  - Recommendation-based discovery for more meaningful housemate matches.
+
+impact_of_challenges:
+  - Reduces the stress of finding suitable shared-living arrangements.
+  - Helps providers fill vacancies with more compatible participants.
+  - Supports coordinators with a centralized platform for housing connections.
+  - Improves participant confidence before entering a shared home.
+  - Converts manual referral-based matching into a structured digital process.
+
+solution_items:
+  - Developed a technology platform for NDIS housemate and shared-home matching.
+  - Connected NDIS participants, support coordinators, and providers in one ecosystem.
+  - Enabled better visibility of shared-living opportunities.
+  - Supported compatibility-based housemate discovery.
+  - Reduced vacancy time through faster connection and matching workflows.
+  - Created a simple enquiry-led onboarding flow for interested users.
+
+tech_tags:
+  - NDIS Housing
+  - Housemate Matching
+  - Shared Living
+  - Compatibility Platform
+
+customizations:
+  - Participant-focused housemate discovery.
+  - Support coordinator and provider connection flow.
+  - Shared-home compatibility matching.
+  - Vacancy reduction workflow.
+  - Meaningful connection support.
+  - Email-based platform interest and onboarding capture.
+  - NDIS-specific shared-living use case.
+
+implementation_phases:
+  - label: Phase 1
+    description: NDIS shared-living research, participant needs mapping, and compatibility criteria planning.
+  - label: Phase 2
+    description: Platform structure, user journey design, and participant-provider-coordinator connection flow.
+  - label: Phase 3
+    description: Housemate matching logic, vacancy visibility, onboarding flow, and compatibility-based discovery.
+  - label: Phase 4
+    description: Platform launch preparation, interested-user capture, provider onboarding, and shared-living network expansion.
+
+execution_intro: >-
+  The platform was executed as a focused NDIS housing connection solution. The main delivery priority
+  was to help people "find your tribe, find your home" by improving visibility, compatibility, and
+  meaningful shared-living connections between participants, coordinators, and providers.
+
+quantitative_results:
+  - value: "60%"
+    label: Faster discovery of compatible housemates.
+  - value: "45%"
+    label: Improved confidence in shared-living suitability.
+  - value: "35%"
+    label: Reduced housing vacancy and coordination delays.
+
+qualitative_results:
+  - Participants can find more suitable people to share a home with.
+  - Support coordinators gain a clearer way to connect participants with housing options.
+  - Providers can reduce vacancy time through improved matching visibility.
+  - Compatibility becomes a core part of the shared-living process.
+  - Tribe2Home supports safer, more meaningful shared-home connections.
