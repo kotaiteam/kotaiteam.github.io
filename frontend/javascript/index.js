@@ -227,14 +227,54 @@ document.addEventListener('DOMContentLoaded', function () {
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
-      var nameField = contactForm.querySelector('[name="name"]');
-      var companyField = contactForm.querySelector('[name="company"]');
-      var emailField = contactForm.querySelector('[name="email"]');
-      var name = nameField ? nameField.value : '';
-      var company = companyField ? companyField.value : '';
-      var email = emailField ? emailField.value : '';
-      alert('Thank you for your inquiry, ' + name + ' from ' + company + '! We\'ll be in touch at ' + email + ' soon.');
-      contactForm.reset();
+
+      var submitBtn = contactForm.querySelector('[type="submit"]');
+      var originalLabel = submitBtn.textContent;
+
+      // Show sending state
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      // Remove any existing status message
+      var existing = contactForm.querySelector('.form-status');
+      if (existing) existing.remove();
+
+      fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      })
+        .then(function (response) {
+          if (response.ok) {
+            contactForm.reset();
+            submitBtn.textContent = 'Message Sent!';
+
+            var success = document.createElement('p');
+            success.className = 'form-status form-status--success';
+            success.textContent = 'Thank you! We\'ll be in touch soon.';
+            contactForm.appendChild(success);
+
+            // Reset button label after 4 seconds
+            setTimeout(function () {
+              submitBtn.disabled = false;
+              submitBtn.textContent = originalLabel;
+            }, 4000);
+          } else {
+            return response.json().then(function (data) {
+              throw new Error(data.error || 'Submission failed');
+            });
+          }
+        })
+        .catch(function (err) {
+          console.error('Formspree error:', err);
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalLabel;
+
+          var error = document.createElement('p');
+          error.className = 'form-status form-status--error';
+          error.textContent = 'Something went wrong. Please try again or email us directly.';
+          contactForm.appendChild(error);
+        });
     });
   }
 

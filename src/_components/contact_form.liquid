@@ -53,7 +53,8 @@
 
       <!-- Contact Form -->
       <div class="contact-form-wrapper">
-        <form id="contactForm">
+        <form id="contactForm" action="{{ metadata.contact_form_endpoint }}">
+          <input type="hidden" name="_subject" value="New Contact Form Submission — kotai.team">
           <div class="form-row">
             <div class="form-group">
               <label for="contact-name">Name *</label>

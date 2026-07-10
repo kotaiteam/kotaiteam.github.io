@@ -8,21 +8,35 @@ This spec covers the viable approaches for triggering an email when a user compl
 
 ---
 
-## Option 1: Formspree (Recommended — simplest)
+## Option 1: Formspree — CHOSEN
 
-**How it works:** Point the form `action` at a Formspree endpoint. They receive the submission and forward it to your email.
+**How it works:** Point the form `action` at a Formspree endpoint. They receive the submission and forward it to your email. Using AJAX mode keeps the user on the page with a custom in-page success state (no redirect).
 
 **Steps:**
 1. Sign up at [formspree.io](https://formspree.io) (free tier: 50 submissions/month)
 2. Create a new form → get an endpoint like `https://formspree.io/f/xyzabc`
 3. Update `contact_form.liquid`:
-   - Add `action="https://formspree.io/f/xyzabc"` and `method="POST"` to the `<form>` tag
+   - Add `action="https://formspree.io/f/xyzabc"` to the `<form>` tag (no `method="POST"` needed for AJAX mode)
    - Add a hidden `<input type="hidden" name="_subject" value="New Contact Form Submission">` for the email subject
-4. Remove the existing JS submit handler (if any) or let the form POST natively
-5. Formspree sends an email to `rupakg@gmail.com` on every submission
+4. Add a `fetch()` submit handler in `frontend/javascript/index.js` to POST the form data to Formspree via AJAX — no page redirect
+5. Show a custom in-page success/error message after submission
+6. Formspree sends an email to `rupakg@gmail.com` on every submission
 
-**Pros:** Zero backend code, free, works out of the box, spam filtering included
-**Cons:** Formspree branding on free tier, 50/month submission limit
+**Pros:**
+- Zero backend code, free, works out of the box
+- Akismet spam filtering included on free tier
+- Domain allowlisting available on free tier — restricts endpoint to `kotai.team` only, blocking abuse from other origins
+- Existing form HTML and CSS completely unchanged (Formspree is invisible to the DOM)
+- AJAX mode keeps the user on the page with a fully custom in-page success state
+
+**Cons:**
+- 50 submissions/month on free tier (sufficient for a B2B lead-gen site)
+- Default (non-AJAX) behavior redirects to a Formspree-hosted thank-you page — mitigated by using AJAX mode
+
+**Security posture:**
+- The Formspree endpoint URL (`https://formspree.io/f/xyzabc`) is visible in the HTML source — this is a URL, not a credential
+- Domain allowlisting (free tier) means submissions from origins other than `kotai.team` are rejected by Formspree's servers
+- No secrets, API keys, or build pipeline changes required — the endpoint URL is safe to commit to git
 
 ---
 
@@ -37,7 +51,13 @@ Same approach as Formspree but no submission limits on the free plan.
 4. Submissions arrive in your inbox immediately
 
 **Pros:** Free with no submission limits, simple integration
-**Cons:** Less control over email formatting compared to EmailJS
+
+**Cons:**
+- The `access_key` is exposed in HTML source — it is a routing key (not a credential), but without domain restriction it can be used from any origin to spam your inbox
+- **Trusted Domains (domain allowlisting) is a Pro-only feature** — not available on the free tier, leaving the key unprotected against abuse from external origins
+- Less control over email formatting compared to EmailJS
+
+**Why not chosen:** Domain restriction is Pro-only. Without it, the exposed `access_key` has no origin-level protection on the free tier. Formspree provides equivalent spam filtering plus free domain allowlisting.
 
 ---
 
@@ -53,7 +73,28 @@ Same approach as Formspree but no submission limits on the free plan.
 5. Show a custom success message in the UI without page reload
 
 **Pros:** Full control over UX, no redirect, custom in-page success state
-**Cons:** API key visible in client-side JS (mitigated by domain allowlisting in the EmailJS dashboard); 200 emails/month on free tier
+
+**Cons:**
+- API key visible in client-side JS bundle — more sensitive than a routing key or endpoint URL (it authenticates API calls)
+- Domain allowlisting required to prevent quota abuse, but this adds dashboard configuration overhead
+- Requires esbuild pipeline changes, dotenv, GitHub Secrets, and SDK integration — highest implementation complexity of the three options
+- 200 emails/month on free tier
+
+**Why not chosen:** Highest complexity, highest abuse surface. The Public Key is an API auth credential baked into the JS bundle. Domain allowlisting mitigates but does not eliminate risk. Formspree achieves the same outcome with far less complexity and lower risk.
+
+---
+
+## Security Comparison (Free Tier)
+
+| | Formspree (Option 1) | Web3Forms (Option 2) | EmailJS (Option 3) |
+|---|---|---|---|
+| What's exposed | Endpoint URL in HTML | `access_key` in HTML | Public Key in JS bundle |
+| Nature of exposure | A URL (not a credential) | A routing key | An API auth key |
+| Abuse potential | Inbox spam | Inbox spam | Inbox spam + quota burn |
+| Built-in spam filter | Yes (Akismet) | Yes (basic) | No |
+| Domain restriction (free) | **Yes** | No (Pro only) | Yes (allowlist) |
+| Submission limit | 50/month | 250/month | 200/month |
+| Implementation complexity | Minimal — form tag + fetch() | Minimal — form tag + hidden input | High — SDK + build pipeline |
 
 ---
 
@@ -61,15 +102,17 @@ Same approach as Formspree but no submission limits on the free plan.
 
 | File | Change |
 |---|---|
-| `src/_components/contact_form.liquid` | Add `action`, `method`, and hidden input fields to the `<form>` tag (Options 1 & 2), or keep as-is and wire up JS handler (Option 3) |
-| `src/_components/head.liquid` | Add EmailJS SDK `<script>` tag (Option 3 only) |
-| `frontend/javascript/index.js` | Add form `submit` event listener and `emailjs.send()` call (Option 3 only) |
+| `src/_components/contact_form.liquid` | Add `action` attribute and hidden `_subject` input to the `<form>` tag |
+| `frontend/javascript/index.js` | Replace dummy submit handler with `fetch()` AJAX call to Formspree + in-page success/error state |
 
 ---
 
 ## Recommendation
 
-Given the existing site is on GitHub Pages with no backend:
+**Use Formspree (Option 1) with AJAX mode.**
 
-- **Start with Web3Forms or Formspree** — a 2-file change (form action + hidden input), live in minutes.
-- **Upgrade to EmailJS** later if a polished in-page success state (no redirect) is needed.
+- Two-file change — no build pipeline, no SDK, no secrets management
+- Free domain allowlisting protects the endpoint from external abuse
+- Akismet spam filtering included
+- AJAX `fetch()` handler keeps the user on the page with a custom success state
+- The endpoint URL is the least sensitive thing that could be exposed — structurally a webhook URL, not a secret
