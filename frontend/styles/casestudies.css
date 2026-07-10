@@ -662,6 +662,27 @@
   color: var(--kotai-charcoal);
 }
 
+.cs-index-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--kotai-charcoal);
+  background: var(--kotai-peach);
+  text-decoration: none;
+  padding: 0.5rem 1.125rem;
+  border-radius: 9999px;
+  margin-top: 1rem;
+  align-self: center;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.cs-index-card:hover .cs-index-card-btn {
+  background: #f0a080;
+  transform: translateY(-1px);
+}
+
 /* ── Back link ── */
 .cs-back-link {
   display: inline-flex;
