@@ -1,0 +1,129 @@
+title: Elfi
+slug: elfi
+image_ext: jpg
+industry: Third-Party Risk Management / Financial Services
+
+tags:
+  - label: "Supplier Due Diligence Platform"
+    style: secondary
+  - label: "Third-Party Risk Management"
+    style: primary
+  - label: "Continuous Supplier Certification"
+    style: secondary
+
+hero_stats:
+  - value: "60%"
+    label: Faster supplier onboarding workflow.
+  - value: "45%"
+    label: Improved third-party risk visibility.
+  - value: "35%"
+    label: Reduced supplier compliance administration.
+
+overview: >-
+  Elfi is a standardized, digital-first supplier due diligence service that helps businesses understand
+  who they are working with by providing reliable, precise supplier information for informed
+  decision-making. The platform focuses on supplier onboarding, ongoing supplier posture analysis,
+  continuous supplier certification, regulatory compliance support, and third-party risk management.
+
+business_problems:
+  - Businesses often struggle to understand supplier risk clearly before onboarding or continuing a partnership.
+  - Supplier due diligence can become slow, repetitive, and heavily manual.
+  - Third-party risk management processes are often fragmented across emails, spreadsheets, documents, and repeated supplier requests.
+  - Businesses need ongoing visibility into supplier posture, not just one-time onboarding checks.
+  - Regulatory and industry obligations require organizations to maintain reliable supplier compliance records.
+  - Suppliers face multiple, ambiguous, and duplicated compliance requests from different customers.
+  - Supplier teams spend excessive time maintaining credentials instead of focusing on service delivery and customer relationships.
+  - Businesses and suppliers both need a simpler, clearer, and more scalable way to manage third-party risk obligations.
+
+objectives_intro: >-
+  Creating a digital-first supplier due diligence ecosystem that makes supplier understanding faster,
+  clearer, more reliable, and easier to maintain for both businesses and suppliers.
+
+objectives:
+  - Streamline supplier onboarding through a faster digital process.
+  - Improve clarity around supplier posture, credentials, and risk profile.
+  - Support continuous supplier certification and compliance confidence.
+  - Reduce repeated supplier information requests across customer networks.
+  - Help businesses meet regulatory and industry requirements with less manual effort.
+  - Provide suppliers with clear guidance on what is required and when.
+  - Improve productivity by reducing unnecessary complexity in third-party risk management.
+
+ai_functionality:
+  - Ongoing supplier posture analysis to keep businesses informed and ready to act.
+  - Digital-first onboarding workflows that reduce manual effort and speed up supplier connection.
+  - Continuous supplier certification to support compliance and risk management.
+  - Risk-based due diligence approach calibrated to the type of service each supplier provides.
+  - Centralized supplier understanding to help businesses make clearer decisions.
+  - Supplier-side guidance that clarifies required actions, timelines, and certification needs.
+  - Two-sided platform model designed to create scale efficiencies across a supplier's customer network.
+
+impact_of_challenges:
+  - Converts complex supplier due diligence into a streamlined digital workflow.
+  - Reduces onboarding friction between businesses and new supplier partners.
+  - Improves confidence in meeting regulatory and industry obligations.
+  - Helps businesses move from ambiguous supplier information to precise, actionable insights.
+  - Reduces duplicated supplier compliance requests across multiple customers.
+  - Gives suppliers a clearer "once and done" pathway for maintaining credentials.
+  - Enables both businesses and suppliers to focus on core operations instead of repetitive compliance administration.
+
+solution_items:
+  - Developed a standardized, digital-first supplier due diligence service.
+  - Enabled businesses to gain clear insights into suppliers and reclaim valuable time.
+  - Added continuous supplier certification to support ongoing compliance and risk management.
+  - Built transparent supplier posture analysis for more informed decision-making.
+  - Created a streamlined supplier onboarding process for faster partner activation.
+  - Added supplier-side compliance support through independent and assured certification services.
+  - Provided clear supplier guidance on required documentation, actions, and timelines.
+  - Designed a two-sided platform supporting both businesses that work with suppliers and suppliers serving multiple customers.
+  - Built the service around specialist third-party risk expertise and practical financial services experience.
+
+tech_tags:
+  - Supplier Due Diligence
+  - Third-Party Risk
+  - Continuous Certification
+  - Digital Onboarding
+
+customizations:
+  - Risk-based supplier due diligence calibrated to the risks of each service provided.
+  - Continuous supplier posture monitoring and analysis.
+  - Supplier certification management for regulatory and industry confidence.
+  - Digital onboarding flow for businesses adding new suppliers.
+  - Supplier-side "once and done" compliance credential process.
+  - Clear guidance for suppliers on what is required and by when.
+  - Two-sided platform structure for both businesses and suppliers.
+  - Independent and assured supplier certification service.
+  - Compliance support designed to reduce ambiguity, duplication, and excessive administration.
+  - Demo and enquiry flow with user segmentation for businesses and suppliers.
+
+implementation_phases:
+  - label: Phase 1
+    description: Third-party risk management research, supplier onboarding pain-point analysis, regulatory obligation mapping, and platform workflow planning.
+  - label: Phase 2
+    description: Digital supplier due diligence framework, business-side onboarding process, supplier-side certification model, and risk-based service calibration.
+  - label: Phase 3
+    description: Continuous supplier analysis, certification maintenance, compliance guidance, and two-sided platform efficiency features.
+  - label: Phase 4
+    description: Demo-led rollout, business and supplier onboarding, platform support, productivity optimization, and ongoing third-party risk ecosystem improvement.
+
+execution_intro: >-
+  ElFi was executed as a focused supplier due diligence and third-party risk management platform.
+  The solution is designed around four core operating principles: streamlined, focused, swift, and
+  always on. It helps businesses rapidly understand supplier risk while helping suppliers reduce
+  administrative burden, maintain credentials, and respond to compliance requirements with greater clarity.
+
+quantitative_results:
+  - value: "60%"
+    label: Faster supplier onboarding through streamlined digital-first workflows.
+  - value: "45%"
+    label: Improved third-party risk visibility through transparent and ongoing supplier posture analysis.
+  - value: "35%"
+    label: Reduced supplier compliance administration through continuous certification and clearer supplier guidance.
+
+qualitative_results:
+  - Businesses gain clearer visibility into supplier risk before and after onboarding.
+  - Supplier onboarding becomes faster, more structured, and less manual.
+  - Regulatory and industry compliance confidence improves through continuous supplier certification.
+  - Suppliers receive clearer requirements and fewer ambiguous compliance requests.
+  - Administrative burden is reduced for both businesses and suppliers.
+  - The two-sided platform creates efficiency across the wider supplier-customer network.
+  - ElFi creates a more transparent, reliable, and scalable way to manage supplier due diligence and third-party risk.

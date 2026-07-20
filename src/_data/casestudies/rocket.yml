@@ -1,0 +1,113 @@
+title: Rocket
+slug: rocket
+image_ext: png
+industry: Sports Technology / Adaptive Coaching
+
+tags:
+  - label: "Adaptive Athlete Coaching"
+    style: secondary
+  - label: "Multi-Discipline Training Plans"
+    style: primary
+  - label: "Smart Watch-Synced Workouts"
+    style: secondary
+
+hero_stats:
+  - value: "60%"
+    label: Faster personalized training plan creation.
+  - value: "45%"
+    label: Improved training consistency.
+  - value: "35%"
+    label: Reduced manual workout planning effort.
+
+overview: >-
+  Rocket is an adaptive coaching application designed for athletes training across triathlon, HYROX,
+  running, strength, mobility, breathwork, swimming, and cycling. The platform creates personalized
+  training plans around the athlete's goals, races, schedule, and lifestyle, while syncing workouts
+  with connected fitness devices such as Garmin, Apple, and Strava.
+
+business_problems:
+  - Athletes often follow rigid training plans that do not adapt to real-life schedule changes.
+  - Multi-discipline athletes need one system for endurance, strength, recovery, and race preparation.
+  - Manual workout planning becomes time-consuming and difficult to sustain.
+  - Training decisions can feel confusing without structured coaching guidance.
+  - Athletes need watch-synced workouts to reduce friction during daily training.
+  - Generic plans often fail to account for race goals, discipline mix, and personal availability.
+
+objectives_intro: >-
+  Creating one adaptive coaching engine that helps athletes train with purpose, structure, and
+  flexibility across multiple race disciplines.
+
+objectives:
+  - Generate personalized training plans within minutes.
+  - Improve athlete consistency through structured daily sessions.
+  - Support multiple disciplines in one connected app.
+  - Adapt training around race goals, lifestyle, schedule, and recovery needs.
+  - Sync workouts with wearable and fitness platforms.
+  - Reduce dependency on manual planning and scattered training tools.
+
+ai_functionality:
+  - Adaptive plan generation based on athlete profile, goals, race calendar, and schedule.
+  - Smart training adjustments around lifestyle changes and availability.
+  - Multi-discipline planning across endurance, strength, mobility, and recovery.
+  - Automated session structuring so every workout is ready before training.
+  - Connected device syncing for Garmin, Apple, and Strava-based workout execution.
+
+impact_of_challenges:
+  - Converts rigid coaching programs into flexible, athlete-specific training systems.
+  - Helps athletes balance endurance, strength, recovery, and race preparation.
+  - Reduces decision fatigue by making daily workout choices clear.
+  - Improves accountability through synced sessions and structured plans.
+  - Supports athletes who train for more than one event type.
+  - Creates a science-backed coaching experience without relying only on manual coaching.
+
+solution_items:
+  - Developed an adaptive coaching platform for triathlon, HYROX, running, strength, mobility, breathwork, swimming, and cycling.
+  - Created an onboarding flow to capture races, goals, schedule, and athlete preferences.
+  - Built personalized multi-discipline training plans around user availability.
+  - Integrated workout syncing with Garmin, Apple, and Strava.
+  - Added structured daily sessions for purpose-driven training.
+  - Designed a mobile-first experience for iOS and Android beta users.
+
+tech_tags:
+  - Adaptive Coaching
+  - Race Planning
+  - Wearable Sync
+  - Multi-Discipline Training
+
+customizations:
+  - Training plans customized by race type, athlete goals, schedule, and discipline.
+  - Multi-discipline modules for triathlon, HYROX, running, strength, mobility, breathwork, swimming, and cycling.
+  - Watch-synced workouts for easier daily execution.
+  - Founding member beta access flow.
+  - Athlete onboarding designed to create a plan within minutes.
+  - Recovery and nervous-system reset support through mobility and breathwork modules.
+
+implementation_phases:
+  - label: Phase 1
+    description: Athlete research, race discipline mapping, onboarding flow, and training plan structure.
+  - label: Phase 2
+    description: Adaptive training engine, schedule-based plan generation, and multi-discipline workout logic.
+  - label: Phase 3
+    description: Wearable platform syncing, daily session delivery, beta testing, and athlete feedback refinement.
+  - label: Phase 4
+    description: iOS and Android launch preparation, founding member rollout, community growth, and performance optimization.
+
+execution_intro: >-
+  The platform was executed as a science-backed adaptive coaching system built by real coaches.
+  The delivery focused on giving athletes a clear training structure, reducing planning effort, syncing
+  workouts to devices, and supporting multiple race disciplines from one mobile app.
+
+quantitative_results:
+  - value: "60%"
+    label: Faster creation of personalized race-focused training plans.
+  - value: "45%"
+    label: Improved athlete consistency through structured daily workouts.
+  - value: "35%"
+    label: Reduced manual planning effort through adaptive coaching and device syncing.
+
+qualitative_results:
+  - Athletes can train across multiple disciplines from one connected platform.
+  - Training plans fit around the athlete's life instead of forcing rigid schedules.
+  - Daily workouts become clearer, structured, and easier to follow.
+  - Wearable syncing reduces friction during execution.
+  - Rocket creates a more flexible, purposeful, and coach-backed training experience.

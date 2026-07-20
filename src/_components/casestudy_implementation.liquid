@@ -1,0 +1,18 @@
+<section class="cs-section-white">
+  <div class="cs-container">
+    <h2 class="cs-h2" style="margin-bottom:2rem;text-align:center;">Implementation</h2>
+    <div class="cs-phases-wrapper">
+      <h3 class="cs-h3" style="margin-bottom:2rem;text-align:center;">Process Overview</h3>
+      <div class="cs-phases-grid">
+        {% for phase in cs.implementation_phases %}
+          <div class="cs-phase-item">
+            <div class="cs-phase-label">{{ phase.label }}</div>
+            <div class="cs-phase-card">
+              <p>{{ phase.description }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

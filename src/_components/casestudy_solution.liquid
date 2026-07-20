@@ -1,0 +1,26 @@
+<section class="cs-section-white">
+  <div class="cs-container">
+    <div class="cs-two-col">
+      <!-- Left: solution text + tech tags -->
+      <div>
+        <h2 class="cs-h2" style="margin-bottom:1.5rem;">Proposed Solution</h2>
+        <ul class="cs-list cs-list--default" style="margin-bottom:1.5rem;">
+          {% for item in cs.solution_items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+        <div class="cs-tech-tags">
+          {% for tag in cs.tech_tags %}
+            <span class="cs-tech-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      <!-- Right: solution image -->
+      <div class="cs-img-wrap cs-img-wrap--contain">
+        <img
+          src="{{ '/images/casestudies/' | append: cs.slug | append: '/solution.' | append: cs.image_ext | relative_url }}"
+          alt="{{ cs.title }} proposed solution">
+      </div>
+    </div>
+  </div>
+</section>

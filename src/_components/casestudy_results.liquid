@@ -1,0 +1,28 @@
+<section class="cs-section-white">
+  <div class="cs-container">
+    <h2 class="cs-h2" style="margin-bottom:2rem;text-align:center;">Results</h2>
+
+    <!-- Quantitative stats -->
+    <div class="cs-quant-grid">
+      {% for result in cs.quantitative_results %}
+        <div class="cs-quant-card">
+          <span class="cs-quant-val">{{ result.value }}</span>
+          <p class="cs-sm" style="color:var(--kotai-slate);">{{ result.label }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Qualitative results -->
+    <div class="cs-card-dark" style="padding:2.5rem;">
+      <h3 class="cs-h3" style="color:#ffffff;margin-bottom:1.5rem;">Qualitative Results</h3>
+      <div class="cs-qual-grid">
+        {% for item in cs.qualitative_results %}
+          <div class="cs-qual-item">
+            <div class="cs-qual-dot"></div>
+            <p class="cs-sm" style="color:rgba(255,255,255,0.85);">{{ item }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

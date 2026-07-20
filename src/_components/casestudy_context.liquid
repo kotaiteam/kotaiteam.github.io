@@ -1,0 +1,21 @@
+<section class="cs-section-tint">
+  <div class="cs-container">
+    <div class="cs-two-col-12-5">
+      <!-- Left: context image -->
+      <div class="cs-img-wrap">
+        <img
+          src="{{ '/images/casestudies/' | append: cs.slug | append: '/context.' | append: cs.image_ext | relative_url }}"
+          alt="{{ cs.title }} business context">
+      </div>
+      <!-- Right: business problems -->
+      <div>
+        <h3 class="cs-h3" style="margin-bottom:1rem;">Specific Business Problems</h3>
+        <ul class="cs-list cs-list--default">
+          {% for item in cs.business_problems %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

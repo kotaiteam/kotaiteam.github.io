@@ -1,0 +1,23 @@
+<section class="cs-section-white">
+  <div class="cs-container">
+    <div class="cs-two-col-7-5">
+      <!-- Left: objectives text -->
+      <div>
+        <h2 class="cs-h2" style="margin-bottom:1.5rem;">Objectives</h2>
+        <p class="cs-body" style="margin-bottom:1.5rem;">{{ cs.objectives_intro }}</p>
+        <h3 class="cs-h3" style="margin-bottom:1rem;">Specific Goals &amp; KPIs</h3>
+        <ul class="cs-list cs-list--default">
+          {% for item in cs.objectives %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- Right: objectives image (appears first on mobile) -->
+      <div class="cs-img-wrap cs-order-first">
+        <img
+          src="{{ '/images/casestudies/' | append: cs.slug | append: '/objectives.' | append: cs.image_ext | relative_url }}"
+          alt="{{ cs.title }} objectives">
+      </div>
+    </div>
+  </div>
+</section>

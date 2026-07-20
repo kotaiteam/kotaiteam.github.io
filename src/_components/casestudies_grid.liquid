@@ -1,0 +1,29 @@
+<section class="cs-section-white">
+  <div class="cs-container">
+    <div class="cs-index-grid">
+      {% for cs in casestudies %}
+        <a href="{{ '/case-studies/' | append: cs.slug | append: '/' | relative_url }}" class="cs-index-card" style="text-decoration:none;">
+          <div class="cs-index-card-image">
+            <img
+              src="{{ '/images/casestudies/' | append: cs.slug | append: '/hero.' | append: cs.image_ext | relative_url }}"
+              alt="{{ cs.title }} platform preview"
+              loading="lazy">
+            <span class="client-industry-badge" style="position:absolute;top:0.75rem;right:0.75rem;">{{ cs.industry }}</span>
+          </div>
+          <div class="cs-index-card-body">
+            <h3 class="cs-index-card-title">{{ cs.title }}</h3>
+            <p class="cs-index-card-tagline">{{ cs.tagline }}</p>
+            <div class="cs-index-card-stats">
+              {% for stat in cs.stats %}
+                <span class="client-industry-badge" style="background:rgba(118,127,166,0.12);color:var(--kotai-slate);text-transform:none;letter-spacing:0;font-size:0.7rem;">{{ stat.value }} {{ stat.label }}</span>
+              {% endfor %}
+            </div>
+            <span class="cs-index-card-btn">
+              View Case Study &rarr;
+            </span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

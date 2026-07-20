@@ -78,6 +78,30 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // ===== MOBILE CASE STUDIES SUBNAV TOGGLE =====
+  var mobileNavToggle = mobileMenu && mobileMenu.querySelector('.mobile-nav-toggle');
+  if (mobileNavToggle) {
+    mobileNavToggle.addEventListener('click', function () {
+      var subnav = mobileNavToggle.nextElementSibling;
+      var isOpen = subnav && subnav.classList.contains('open');
+      if (subnav) subnav.classList.toggle('open', !isOpen);
+      mobileNavToggle.classList.toggle('open', !isOpen);
+      mobileNavToggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+  }
+
+  // Close subnav links close the whole mobile menu
+  if (mobileMenu) {
+    mobileMenu.querySelectorAll('.mobile-subnav-link').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileMenuOpen = false;
+        mobileMenu.classList.remove('open');
+        if (menuIconOpen) menuIconOpen.classList.remove('hidden');
+        if (menuIconClose) menuIconClose.classList.add('hidden');
+      });
+    });
+  }
+
 
   // ===== SCROLL PROGRESS =====
   function updateScrollProgress() {

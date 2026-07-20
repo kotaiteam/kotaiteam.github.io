@@ -1,0 +1,35 @@
+<section class="cs-hero">
+  <div class="cs-hero-bg"></div>
+  <div class="cs-hero-grid"></div>
+  <div class="cs-hero-inner">
+    <a href="{{ '/case-studies/' | relative_url }}" class="cs-back-link">
+      &larr; All Case Studies
+    </a>
+    <div class="cs-two-col">
+      <!-- Left: title, tags, stats -->
+      <div>
+        <h1 class="cs-h1" style="color:#ffffff;margin-bottom:1.5rem;">{{ cs.title }}</h1>
+        <div class="cs-tags">
+          {% for tag in cs.tags %}
+            <span class="cs-tag-pill cs-tag-pill--{{ tag.style }}">{{ tag.label }}</span>
+          {% endfor %}
+        </div>
+        <div class="cs-hero-stats">
+          {% for stat in cs.hero_stats %}
+            <div class="cs-hero-stat-card">
+              <span class="cs-stat-val" style="color:var(--kotai-peach);">{{ stat.value }}</span>
+              <span class="cs-stat-label" style="color:rgba(255,255,255,0.8);">{{ stat.label }}</span>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <!-- Right: hero image -->
+      <div>
+        <img
+          src="{{ '/images/casestudies/' | append: cs.slug | append: '/hero.' | append: cs.image_ext | relative_url }}"
+          alt="{{ cs.title }} platform preview"
+          style="width:100%;height:auto;border-radius:1.5rem;max-height:420px;object-fit:contain;">
+      </div>
+    </div>
+  </div>
+</section>

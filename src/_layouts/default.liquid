@@ -5,7 +5,7 @@
   </head>
   <body data-page="{{ data.page_id }}">
     {% render "scroll_progress" %}
-    {% render "navbar", metadata: site.metadata, resource: resource, page_id: data.page_id %}
+    {% render "navbar", metadata: site.metadata, resource: resource, page_id: data.page_id, casestudies: site.data.casestudies.index %}
     {% render "mobile_bottom_bar" %}
     <main class="main-content">
       {{ content }}

@@ -1,0 +1,24 @@
+<!-- ── Case Studies: Highlights ── -->
+<section class="stats-section" style="background:linear-gradient(135deg,var(--kotai-charcoal) 0%,#4a4a4a 100%);border-bottom:none;">
+  <div class="container">
+
+    <!-- Intro copy -->
+    <div style="max-width:48rem;margin:0 auto 3rem;text-align:center;">
+      <p style="font-size:1rem;line-height:1.75;color:rgba(255,255,255,0.8);">
+        From AI-powered marketplaces to compliance platforms, fund administration tools to adaptive coaching apps —
+        we partner with founders and teams to turn complex ideas into working digital products.
+        Across <strong style="color:var(--kotai-peach);">{{ casestudies.size }} products</strong> spanning
+        <strong style="color:var(--kotai-peach);">8 industries</strong>, our work consistently delivers
+        faster workflows, greater visibility, and reduced operational effort.
+      </p>
+    </div>
+
+    <!-- Industry tags -->
+    <div style="display:flex;flex-wrap:wrap;gap:0.625rem;justify-content:center;">
+      {% for cs in casestudies %}
+        <span style="display:inline-block;padding:0.3rem 0.875rem;border-radius:9999px;font-size:0.75rem;font-weight:500;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.75);border:1px solid rgba(255,255,255,0.15);">{{ cs.industry }}</span>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

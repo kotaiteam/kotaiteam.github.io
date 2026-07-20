@@ -41,6 +41,22 @@
         <a href="{{ '/services/' | relative_url }}" class="nav-link{% if current == 'services' %} active{% endif %}">
           Services<span class="nav-underline"></span>
         </a>
+        <div class="nav-dropdown">
+          <span class="nav-link nav-dropdown-toggle{% if current == 'casestudies' %} active{% endif %}" style="cursor:default;">
+            Case Studies
+            <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            <span class="nav-underline"></span>
+          </span>
+          <div class="nav-dropdown-menu">
+            <a href="{{ '/case-studies/' | relative_url }}" class="nav-dropdown-item">All Case Studies</a>
+            {% for cs in casestudies limit:5 %}
+              <a href="{{ '/case-studies/' | append: cs.slug | append: '/' | relative_url }}" class="nav-dropdown-item">{{ cs.title }}</a>
+            {% endfor %}
+            {% if casestudies.size > 5 %}
+              <a href="{{ '/case-studies/' | relative_url }}" class="nav-dropdown-item nav-dropdown-item--more">More&hellip;</a>
+            {% endif %}
+          </div>
+        </div>
         <a href="{{ '/about/' | relative_url }}" class="nav-link{% if current == 'about' %} active{% endif %}">
           About Us<span class="nav-underline"></span>
         </a>
@@ -59,6 +75,19 @@
         {% assign current = page_id %}
         <a href="{{ '/' | relative_url }}" class="mobile-nav-link{% if current == 'home' %} active{% endif %}">Home</a>
         <a href="{{ '/services/' | relative_url }}" class="mobile-nav-link{% if current == 'services' %} active{% endif %}">Services</a>
+        <button class="mobile-nav-toggle{% if current == 'casestudies' %} active{% endif %}" aria-expanded="false">
+          Case Studies
+          <svg class="mobile-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="mobile-subnav">
+          <a href="{{ '/case-studies/' | relative_url }}" class="mobile-subnav-link">All Case Studies</a>
+          {% for cs in casestudies limit:5 %}
+            <a href="{{ '/case-studies/' | append: cs.slug | append: '/' | relative_url }}" class="mobile-subnav-link">{{ cs.title }}</a>
+          {% endfor %}
+          {% if casestudies.size > 5 %}
+            <a href="{{ '/case-studies/' | relative_url }}" class="mobile-subnav-link mobile-subnav-link--more">More&hellip;</a>
+          {% endif %}
+        </div>
         <a href="{{ '/about/' | relative_url }}" class="mobile-nav-link{% if current == 'about' %} active{% endif %}">About Us</a>
         <a href="{{ '/contact/' | relative_url }}" class="mobile-nav-link mobile-cta-btn{% if current == 'contact' %} active{% endif %}">Contact Us</a>
       </nav>

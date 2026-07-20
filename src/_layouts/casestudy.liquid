@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{% assign slug = layout.slug | default: page.data.slug %}
+{% assign cs = site.data.casestudies[slug] %}
+{% render "casestudy_hero", cs: cs %}
+{% render "casestudy_overview", cs: cs %}
+{% render "casestudy_context", cs: cs %}
+{% render "casestudy_objectives", cs: cs %}
+{% render "casestudy_ai_impact", cs: cs %}
+{% render "casestudy_solution", cs: cs %}
+{% render "casestudy_customizations", cs: cs %}
+{% render "casestudy_implementation", cs: cs %}
+{% render "casestudy_execution", cs: cs %}
+{% render "casestudy_results", cs: cs %}
+{% render "cta_section",
+   title: "Need to Accelerate Your Next Digital Product?",
+   body: "From concept to launch, we help teams build scalable digital products with clarity, speed, and long-term impact.",
+   button_text: "Contact Us",
+   button_href: "/contact/",
+   extra_class: "cta-digital" %}

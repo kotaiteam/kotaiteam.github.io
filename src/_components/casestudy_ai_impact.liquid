@@ -1,0 +1,24 @@
+<section class="cs-section-tint">
+  <div class="cs-container">
+    <div class="cs-ai-grid">
+      <!-- Light card: AI Functionality -->
+      <div class="cs-card-light">
+        <h3 class="cs-h3" style="margin-bottom:1rem;">AI Functionality</h3>
+        <ul class="cs-list cs-list--default">
+          {% for item in cs.ai_functionality %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- Dark card: Impact of Challenges -->
+      <div class="cs-card-dark">
+        <h3 class="cs-h3" style="color:#ffffff;margin-bottom:1rem;">Impact of Challenges</h3>
+        <ul class="cs-list" style="list-style-type:disc;padding-left:1.25rem;">
+          {% for item in cs.impact_of_challenges %}
+            <li style="color:rgba(255,255,255,0.85);font-size:0.875rem;line-height:1.625;">{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

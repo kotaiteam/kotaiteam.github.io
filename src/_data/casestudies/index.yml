@@ -1,0 +1,135 @@
+- slug: ablefinder
+  title: AbleFinder
+  industry: Disability Services / NDIS
+  tagline: AI-powered NDIS support matching platform connecting participants with trusted providers
+  image_ext: jpg
+  tags:
+    - NDIS Support Matching
+    - AI Smart Provider Discovery
+    - Community Trust & Reviews
+  stats:
+    - value: "60%"
+      label: Faster provider discovery
+    - value: "45%"
+      label: Improved trust in provider selection
+    - value: "35%"
+      label: Reduced manual coordination effort
+
+- slug: buildchain
+  title: BuildChain
+  industry: Construction Technology
+  tagline: Construction procurement and supply chain management platform for contractors and suppliers
+  image_ext: png
+  tags:
+    - Construction Procurement Platform
+    - Smart Supply Chain Management
+    - Real-Time Materials & Supplier Visibility
+  stats:
+    - value: "60%"
+      label: Faster procurement and quote turnaround
+    - value: "45%"
+      label: Improved supplier and purchasing visibility
+    - value: "35%"
+      label: Reduced manual procurement administration
+
+- slug: elfi
+  title: ElFi
+  industry: Third-Party Risk Management / Financial Services
+  tagline: Standardised digital-first supplier due diligence for informed third-party risk decisions
+  image_ext: jpg
+  tags:
+    - Supplier Due Diligence Platform
+    - Third-Party Risk Management
+    - Continuous Supplier Certification
+  stats:
+    - value: "60%"
+      label: Faster supplier onboarding workflow
+    - value: "45%"
+      label: Improved third-party risk visibility
+    - value: "35%"
+      label: Reduced supplier compliance administration
+
+- slug: faastaa
+  title: Faastaa
+  industry: Home Services Marketplace
+  tagline: Real-time home services marketplace that instantly matches customers with qualified local taskers
+  image_ext: jpg
+  tags:
+    - Real-Time Task Matching
+    - On-Demand Home Services
+    - Smart Tasker Allocation Platform
+  stats:
+    - value: "60%"
+      label: Faster customer-to-tasker matching
+    - value: "45%"
+      label: Reduced manual bidding and negotiation effort
+    - value: "35%"
+      label: Improved task completion efficiency
+
+- slug: fundpro
+  title: FundPro
+  industry: Financial Services / Fund Administration
+  tagline: Complete tailored licensing, trustee, and administration solutions for wholesale fund managers
+  image_ext: jpg
+  tags:
+    - AFSL & ACL Licensing
+    - Trustee & Fund Administration
+    - Compliance, Investor Portal & Fund Operations
+  stats:
+    - value: "60%"
+      label: Faster onboarding and fund establishment readiness
+    - value: "45%"
+      label: Improved compliance and administration visibility
+    - value: "35%"
+      label: Reduced manual fund operations workload
+
+- slug: rocket
+  title: Rocket
+  industry: Sports Technology / Adaptive Coaching
+  tagline: Adaptive coaching app for athletes training across triathlon, HYROX, running, strength, and more
+  image_ext: png
+  tags:
+    - Adaptive Athlete Coaching
+    - Multi-Discipline Training Plans
+    - Smart Watch-Synced Workouts
+  stats:
+    - value: "60%"
+      label: Faster personalized training plan creation
+    - value: "45%"
+      label: Improved training consistency
+    - value: "35%"
+      label: Reduced manual workout planning effort
+
+- slug: tribe2home
+  title: Tribe2Home
+  industry: Disability Services / NDIS / Shared Living
+  tagline: Technology platform connecting NDIS participants, coordinators, and providers for compatible shared living
+  image_ext: png
+  tags:
+    - NDIS Housemate Matching
+    - Shared Living Compatibility Platform
+    - Reduced Housing Vacancy Time
+  stats:
+    - value: "60%"
+      label: Faster compatible housemate discovery
+    - value: "45%"
+      label: Improved shared-living match confidence
+    - value: "35%"
+      label: Reduced vacancy and coordination delays
+
+- slug: tummily
+  title: Tummily
+  industry: Digital Health / Gut Health / IBS Management
+  tagline: Personalised IBS and low FODMAP diet support platform with symptom tracking and dietitian-designed meal plans
+  image_ext: png
+  tags:
+    - Low FODMAP Diet Planning
+    - Symptom Tracking & Insights
+    - Dietitian-Designed IBS Support
+  stats:
+    - value: "60%"
+      label: Reduced meal-planning confusion
+    - value: "45%"
+      label: Better symptom tracking consistency
+    - value: "35%"
+      label: Faster preparation for clinician appointments

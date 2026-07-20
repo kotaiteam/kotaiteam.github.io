@@ -1,0 +1,127 @@
+title: FundPro
+slug: fundpro
+image_ext: jpg
+industry: Financial Services / Fund Administration
+
+tags:
+  - label: "AFSL & ACL Licensing"
+    style: secondary
+  - label: "Trustee & Fund Administration"
+    style: primary
+  - label: "Compliance, Investor Portal & Fund Operations"
+    style: secondary
+
+hero_stats:
+  - value: "60%"
+    label: Faster onboarding and fund establishment readiness.
+  - value: "45%"
+    label: Improved compliance and administration visibility.
+  - value: "35%"
+    label: Reduced manual fund operations workload.
+
+overview: >-
+  FundPro provides complete tailored licensing, trustee, and administration solutions for investment
+  managers, wholesale fund managers, and financial services clients. The business supports clients
+  across Australian Financial Services Licensing, Trustee and Intermediary Services, Australian Credit
+  Licensing, and fund administration services including investor reporting, AML/KYC, capital calls,
+  distributions, quarterly NAV calculations, and more.
+
+business_problems:
+  - Wholesale fund managers need AFSL support to operate, promote, and advise on funds in Australia.
+  - Fund managers often struggle with regulatory compliance across ASIC, APRA, AUSTRAC, NCCP, and other relevant obligations.
+  - Establishing funds requires coordination between legal, tax, accounting, audit, insurance, compliance, trustee, and administration stakeholders.
+  - Investor onboarding, AML/KYC, reporting, capital calls, NAV calculations, distributions, subscriptions, and redemptions can become highly manual.
+  - Financial services businesses need trusted Responsible Managers, Corporate Authorized Representative structures, Authorized Credit Representative support, and outsourced compliance solutions.
+  - Investors often prefer an independent trustee or third-party structure to improve transparency and confidence.
+  - Fund managers need to focus on capital raising, investment performance, funds management, and advisory rather than administration-heavy operations.
+
+objectives_intro: >-
+  Creating a complete licensing, trustee, compliance, and fund administration ecosystem that enables
+  finance professionals to focus on growth, capital raising, fund performance, and investor
+  relationships while FundPro manages the operational and regulatory structure.
+
+objectives:
+  - Streamline AFSL, ACL, trustee, and administration onboarding.
+  - Support wholesale fund managers with tailored licensing and fund structures.
+  - Improve ongoing compliance monitoring and regulatory confidence.
+  - Reduce manual investor administration and reporting workload.
+  - Provide a reliable online hub and investor portal as a single source of truth.
+  - Improve investor confidence through trustee independence, transparent reporting, and structured communications.
+  - Support fund growth through bespoke packages tailored to each client's goals.
+
+ai_functionality:
+  - Smart compliance workflow structure to manage checks, calendars, documentation, and regulatory obligations.
+  - Intelligent onboarding flow covering client fact-find, due diligence, engagement, fund establishment, documentation, and authorized representative setup.
+  - Automated investor administration support through portal-based applications, onboarding, reporting, live updates, and activity logs.
+  - Digital capital table and registry management for shares, units, options, convertibles, bonds, and partly paid securities.
+  - Automated reporting support for NAV calculations, investor statements, tax statements, ASIC notifications, ATO files, shareholder reports, and investor spread reports.
+  - Data-driven operational visibility for fund managers, investors, advisors, accountants, auditors, and service providers.
+
+impact_of_challenges:
+  - Simplifies complex AFSL and ACL licensing requirements into a structured outsourced solution.
+  - Reduces the burden of ongoing compliance, monitoring, reporting, and regulatory checks.
+  - Helps fund managers launch, operate, and scale with greater confidence.
+  - Improves investor trust through independent trustee services and transparent fund administration.
+  - Minimizes fragmented communication between fund managers, investors, lawyers, accountants, auditors, and advisors.
+  - Converts manual investor operations into a streamlined portal-led process.
+  - Enables finance professionals to stay focused on returns, growth, and advisory while FundPro manages the operational framework.
+
+solution_items:
+  - Developed a complete licensing, trustee, compliance, and administration service framework for wholesale fund managers and financial services clients.
+  - Enabled AFSL support through Corporate Authorized Representative appointment, compliance monitoring, policy and procedure support, and Responsible Manager assistance.
+  - Enabled ACL support through Authorized Credit Representative appointment, Responsible Manager services, credit compliance, outsourced credit function, and training and policy support.
+  - Provided trustee and intermediary services including corporate trustee, custody, investor onboarding, investor communications, compliance, and regulation support.
+  - Built a bespoke online hub and investor portal to manage applications, onboarding, live updates, investor reporting, and fund manager visibility.
+  - Added fund administration support for AML/KYC, quarterly NAV, capital calls, distributions, subscriptions, redemptions, books and records, bank accounts, investor registries, and annual reporting.
+  - Created a streamlined three-step onboarding process covering Client Fact Find, Client Engagement, and Establish Fund.
+
+tech_tags:
+  - AFSL Licensing
+  - ACL Licensing
+  - Trustee Services
+  - Fund Administration
+
+customizations:
+  - Bespoke licensing and trustee structures tailored to each fund manager's goals, resources, and growth plans.
+  - Corporate Authorized Representative support for investment managers across multiple asset classes.
+  - Authorized Credit Representative support for businesses requiring ACL-backed lending operations.
+  - Responsible Manager support for both AFSL and ACL-related requirements.
+  - Compliance monitoring aligned with ASIC, APRA, AUSTRAC, NCCP, and relevant regulatory frameworks.
+  - Online investor portal customized around fund manager branding and investor communication requirements.
+  - Capital table tools for shares, units, options, convertibles, bonds, and partly paid securities.
+  - Transaction support for allotments, transfers, redemptions, subscriptions, distributions, and capital calls.
+  - Investor management tools allowing investors to update details, download statements, access certificates, and grant read-only access to advisors.
+  - Reporting support for top 20 shareholder reports, investor spread reports, AIIR, QTFN, ESS, ASIC notifications, and ATO-related files.
+
+implementation_phases:
+  - label: Phase 1
+    description: Client discovery, fund structure review, service requirement mapping, and coordination with client lawyers and advisors.
+  - label: Phase 2
+    description: Client engagement, due diligence, background checks, compliance review, and service package confirmation.
+  - label: Phase 3
+    description: Fund establishment, documentation, agreements, legal coordination, tax coordination, accounting setup, audit preparation, and authorized representative setup.
+  - label: Phase 4
+    description: Ongoing licensing, trustee, administration, investor portal, reporting, compliance monitoring, registry management, and operational support.
+
+execution_intro: >-
+  The solution was executed as a boutique, director-led service model where FundPro personally manages
+  each client with support from a specialist team. The workflow focuses on fast onboarding, tailored
+  fund structures, compliance balance, operational clarity, and long-term scalability for wholesale fund
+  managers, lenders, fintechs, family offices, professional advisors, property funds, private credit
+  funds, syndicates, and lending businesses.
+
+quantitative_results:
+  - value: "60%"
+    label: Faster onboarding and fund establishment readiness through a structured three-step onboarding process.
+  - value: "45%"
+    label: Improved compliance and administration visibility through tailored monitoring, checklists, and investor portal workflows.
+  - value: "35%"
+    label: Reduced manual fund operations workload through digital investor onboarding, reporting, registry, and administration support.
+
+qualitative_results:
+  - Fund managers can focus more on growth, capital raising, investment management, and advisory.
+  - Investors gain greater confidence through independent trustee involvement and transparent reporting.
+  - Compliance obligations become easier to manage through structured monitoring and specialist support.
+  - Investor onboarding, AML/KYC, reporting, capital calls, distributions, and NAV calculations become more streamlined.
+  - Financial services clients receive tailored AFSL, ACL, trustee, and administration support under one service ecosystem.
+  - FundPro creates a more efficient, transparent, and scalable operating framework for wholesale funds and finance businesses.
